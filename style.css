@@ -1523,3 +1523,8 @@ html[data-theme="dark"] .mvv-tag.mission {
   opacity: 1;
   visibility: visible;
 }
+html[data-theme="dark"] .plan-btn,html[data-theme="dark"] .btn-hero-primary:hover {
+  color: #fff;
+  border: 1px solid #fff;
+}
+	

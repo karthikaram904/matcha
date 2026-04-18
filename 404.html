@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>404 — Page Not Found · Chado Matcha</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script>(function(){var t=localStorage.getItem("chado-theme"),d=localStorage.getItem("chado-dir");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");if(d==="rtl")document.documentElement.setAttribute("dir","rtl");})()</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --green-deep:#1c3016;--sage:#8aac7e;--sage-pale:#c8dfc2;
+  --text-dark:#1c2419;--text-muted:#7a9175;--bg:#f5f2eb;
+}
+html[data-theme="dark"]{--bg:#000000;--text-dark:#ffffff;--text-muted:#8aac7e;}
+html,body{height:100%;font-family:'DM Sans',sans-serif;}
+body{
+  min-height:100vh;background:var(--bg);color:var(--text-dark);
+  display:flex;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;transition:background 0.3s,color 0.3s;
+}
+/* bg pattern */
+body::before{
+  content:'';position:absolute;inset:0;
+  background:url('https://images.unsplash.com/photo-1558160074-4d7d8bdf4256?w=1600&q=40') center/cover no-repeat;
+  opacity:0.06;z-index:0;
+}
+/* decorative big number */
+.bg-num{
+  position:absolute;font-family:'Cormorant Garamond',serif;
+  font-size:clamp(180px,30vw,340px);font-weight:300;
+  color:var(--green-deep);opacity:0.04;
+  line-height:1;user-select:none;z-index:0;
+  top:50%;left:50%;transform:translate(-50%,-50%);
+  white-space:nowrap;
+}
+html[data-theme="dark"] .bg-num{color:#ffffff;}
+
+.card{
+  position:relative;z-index:1;text-align:center;
+  padding:56px 48px;max-width:520px;width:100%;
+}
+.logo{
+  font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:300;
+  color:var(--green-deep);letter-spacing:3px;text-transform:uppercase;
+  text-decoration:none;display:inline-block;margin-bottom:48px;
+}
+html[data-theme="dark"] .logo{color:#c8dfc2;}
+.logo span{font-style:italic;color:#4a7c3f;}
+.tea-icon{
+  width:72px;height:72px;border-radius:50%;
+  background:linear-gradient(135deg,#2e5026,#1c3016);
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 24px;
+  box-shadow:0 8px 32px rgba(28,48,22,0.25);
+}
+.tea-icon img{width:48px;height:48px;border-radius:50%;object-fit:cover;}
+.err-code{
+  font-family:'Cormorant Garamond',serif;font-size:80px;font-weight:300;
+  color:var(--green-deep);line-height:1;margin-bottom:8px;
+}
+html[data-theme="dark"] .err-code{color:#c8dfc2;}
+.err-title{
+  font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;
+  color:var(--text-dark);margin-bottom:14px;
+}
+.err-title em{font-style:italic;color:#4a7c3f;}
+.err-desc{font-size:16px;color:var(--text-muted);line-height:1.75;margin-bottom:36px;max-width:380px;margin-left:auto;margin-right:auto;}
+.btn-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+.btn-home{
+  background:var(--green-deep);color:#c8dfc2;
+  padding:13px 28px;border:none;border-radius:6px;
+  font-size:14px;font-weight:500;letter-spacing:0.5px;
+  cursor:pointer;font-family:'DM Sans',sans-serif;text-decoration:none;
+  transition:background 0.2s,transform 0.2s;display:inline-block;
+}
+.btn-home:hover{background:#2e5026;transform:translateY(-2px);}
+.btn-back{
+  background:transparent;color:var(--text-muted);
+  padding:13px 28px;border:0.5px solid currentColor;border-radius:6px;
+  font-size:14px;cursor:pointer;font-family:'DM Sans',sans-serif;
+  text-decoration:none;transition:color 0.2s,border-color 0.2s,transform 0.2s;
+  display:inline-block;
+}
+.btn-back:hover{color:var(--green-deep);border-color:var(--green-deep);transform:translateY(-2px);}
+html[data-theme="dark"] .btn-back:hover{color:#c8dfc2;border-color:#c8dfc2;}
+.divider{height:0.5px;background:rgba(138,172,126,0.2);margin:36px 0;}
+.links-row{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;}
+.quick-link{font-size:13px;color:var(--text-muted);text-decoration:none;letter-spacing:0.5px;transition:color 0.2s;}
+.quick-link:hover{color:#4a7c3f;}
+
+@media(max-width:480px){
+  .card{padding:40px 24px;}
+  .err-code{font-size:64px;}
+  .err-title{font-size:24px;}
+  .btn-row{flex-direction:column;align-items:center;}
+  .btn-home,.btn-back{width:100%;text-align:center;}
+}
+.card img
+{
+  width: 140px;
+}
+</style>
+</head>
+<body>
+<div class="bg-num">404</div>
+<div class="card">
+  <a href="index.html">
+  <img src="images/chado-matcha-logo.png" alt="Chado Matcha Logo">
+</a>
+  <div class="tea-icon">
+    <img src="https://images.unsplash.com/photo-1558160074-4d7d8bdf4256?w=100&q=80" alt="matcha">
+  </div>
+  <div class="err-code">404</div>
+  <div class="err-title">This page has <em>steeped away</em></div>
+  <p class="err-desc">The page you are looking for may have moved, been removed, or never existed. Let us guide you back to the ceremony.</p>
+  <div class="btn-row">
+    <a href="index.html" class="btn-home">← Back to home</a>
+    <a href="javascript:history.back()" class="btn-back">Go back</a>
+  </div>
+  <div class="divider"></div>
+  <div class="links-row">
+    <a href="matcha.html" class="quick-link">Matcha</a>
+    <a href="equipment.html" class="quick-link">Equipment</a>
+    <a href="workshops.html" class="quick-link">Workshops</a>
+    <a href="subscription.html" class="quick-link">Subscribe</a>
+    <a href="contact.html" class="quick-link">Contact</a>
+  </div>
+</div>
+</body>
+</html>

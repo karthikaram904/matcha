@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Login — Chado Matcha</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script>(function(){var t=localStorage.getItem("chado-theme"),d=localStorage.getItem("chado-dir");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");if(d==="rtl")document.documentElement.setAttribute("dir","rtl");})()</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --green-deep:#1c3016;--green-mid:#2e5026;--sage:#8aac7e;--sage-pale:#c8dfc2;
+  --cream:#f5f2eb;--text-dark:#1c2419;--text-muted:#7a9175;--border:#dde8d8;
+}
+html,body{height:100%;font-family:'DM Sans',sans-serif;}
+body{
+  background:#0d1a09;
+  min-height:60vh;
+  display:flex;align-items:center;justify-content:center;
+  padding:24px 16px;
+  position:relative;overflow:auto;
+}
+/* bg image overlay */
+body::before{
+  content:'';position:absolute;inset:0;
+  background:url('images/sell1.webp') center/cover no-repeat;
+  opacity:0.12;z-index:0;
+}
+.auth-logo img {
+  width: 130px;
+}
+.auth-title {
+  margin-top: -30px;
+}
+/* card */
+.auth-card{
+  position:relative;z-index:1;
+  background:#fff;border-radius:20px;
+  width:100%;max-width:440px;
+  padding:10px 40px 16px;
+  box-shadow:0 24px 64px rgba(0,0,0,0.3);
+
+}
+/* logo area */
+.auth-logo{text-align:center;margin-bottom:6px;}
+.auth-logo a{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;color:var(--green-deep);letter-spacing:3px;text-transform:uppercase;text-decoration:none;}
+.auth-logo a span{font-style:italic;color:#4a7c3f;}
+.auth-welcome{text-align:center;font-size:17px;color:var(--text-muted);margin-bottom:28px;letter-spacing:0.3px;}
+.auth-title{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:300;color:var(--text-dark);margin-bottom:4px;text-align:center;}
+.auth-subtitle{font-size:17px;color:var(--text-muted);text-align:center;margin-bottom:28px;}
+/* divider after title */
+.auth-divider-line{height:0.5px;background:var(--border);margin-bottom:24px;}
+/* form */
+.form-group{margin-bottom:18px;}
+.form-label{display:block;font-size:14px;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);margin-bottom:7px;}
+.form-input{width:100%;background:#f9fdf7;border:0.5px solid var(--border);border-radius:8px;padding:12px 16px;font-size:14px;font-family:'DM Sans',sans-serif;color:var(--text-dark);outline:none;transition:border-color 0.2s,box-shadow 0.2s;}
+.form-input:focus{border-color:#8aac7e;box-shadow:0 0 0 3px rgba(138,172,126,0.12);}
+/* password field */
+.pw-wrap{position:relative;}
+.pw-wrap .form-input{padding-right:44px;}
+.pw-eye{position:absolute;right:13px;top:50%;transform:translateY(-50%);background:none;border:none;color:#8aac7e;cursor:pointer;font-size:16px;padding:4px;line-height:1;transition:color 0.2s;}
+.pw-eye:hover{color:var(--green-deep);}
+/* remember + forgot */
+.pw-options{display:flex;align-items:center;justify-content:space-between;margin-top:10px;margin-bottom:22px;}
+.remember{display:flex;align-items:center;gap:7px;font-size:14px;color:var(--text-muted);cursor:pointer;user-select:none;}
+.remember input[type=checkbox]{width:15px;height:15px;accent-color:var(--green-deep);cursor:pointer;}
+.forgot-link{font-size:14px;color:#4a7c3f;text-decoration:none;transition:color 0.2s;}
+.forgot-link:hover{color:var(--green-deep);}
+/* submit btn */
+.btn-auth{width:100%;padding:13px;background:var(--green-deep);color:var(--sage-pale);border:none;border-radius:8px;font-size:17px;font-weight:500;cursor:pointer;font-family:'DM Sans',sans-serif;letter-spacing:0.5px;transition:background 0.25s,transform 0.2s,box-shadow 0.25s;margin-bottom:20px;}
+.btn-auth:hover{background:#2e5026;transform:translateY(-2px);box-shadow:0 6px 20px rgba(28,48,22,0.25);}
+/* social divider */
+.social-divider{display:flex;align-items:center;gap:12px;margin-bottom:18px;}
+.social-divider-line{flex:1;height:0.5px;background:var(--border);}
+.social-divider-text{font-size:14px;color:var(--text-muted);letter-spacing:0.5px;white-space:nowrap;}
+/* social buttons */
+.social-row{display:flex;justify-content:center;gap:14px;}
+.social-btn{width:44px;height:44px;border-radius:50%;border:0.5px solid var(--border);background:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:17px;transition:background 0.2s,border-color 0.2s,transform 0.2s;text-decoration:none;color:inherit;}
+.social-btn:hover{transform:translateY(-3px);box-shadow:0 4px 14px rgba(0,0,0,0.1);}
+.social-btn.google:hover{background:#fff5f5;border-color:#ea4335;}
+.social-btn.twitter:hover{background:#f0f8ff;border-color:#1da1f2;}
+.social-btn.apple:hover{background:#f5f5f5;border-color:#333;}
+.social-btn.facebook:hover{background:#f0f4ff;border-color:#1877f2;}
+/* switch link */
+.auth-switch{text-align:center;margin-top:20px;font-size:14px;color:var(--text-muted);}
+.auth-switch a{color:#4a7c3f;text-decoration:none;font-weight:500;transition:color 0.2s;}
+.auth-switch a:hover{color:var(--green-deep);}
+
+/* responsive */
+@media(max-width:480px){
+  .auth-card{padding:32px 24px 28px;}
+}
+html[data-theme="dark"] body{background:#0a1208!important;}
+html[data-theme="dark"] .auth-card{background:#111!important;}
+html[data-theme="dark"] .auth-title,.auth-welcome,.auth-subtitle{color:#c8dfc2!important;}
+html[data-theme="dark"] .form-label{color:#8aac7e!important;}
+html[data-theme="dark"] .form-input{background:#000!important;color:#fff!important;border-color:#333!important;}
+html[data-theme="dark"] .remember,.auth-switch{color:#8aac7e!important;}
+html[data-theme="dark"] .social-btn{background:#111!important;border-color:#333!important;}
+html[data-theme="dark"] .auth-divider-line{background:#222!important;}
+</style>
+</head>
+<body>
+
+<div class="auth-card">
+  <!-- Logo + Welcome -->
+  <div class="auth-logo">
+    <a href="index.html">
+  <img src="images/chado2-logo.png" alt="Chado Matcha Logo">
+</a>
+  </div>
+  <div class="auth-title">Sign in</div>
+  <div class="auth-welcome">Welcome back — your ritual awaits</div>
+  <div class="auth-divider-line"></div>
+
+  
+  
+
+  <!-- Form -->
+  <form>
+    <div class="form-group">
+      <label class="form-label">Email address</label>
+      <input class="form-input" type="email" placeholder="you@example.com" autocomplete="email"/>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Password</label>
+      <div class="pw-wrap">
+        <input class="form-input" type="password" id="loginPw" placeholder="Enter your password" autocomplete="current-password"/>
+        <button type="button" class="pw-eye" id="loginEye" onclick="togglePw('loginPw','loginEye')">
+          <i class="fa-regular fa-eye" id="loginEyeIcon"></i>
+        </button>
+      </div>
+      <div class="pw-options">
+        <label class="remember">
+          <input type="checkbox"/> Remember me
+        </label>
+        <a href="#" class="forgot-link">Forgot password?</a>
+      </div>
+    </div>
+    <button type="submit" class="btn-auth">Sign in</button>
+  </form>
+
+  <!-- Social login -->
+  <div class="social-divider">
+    <div class="social-divider-line"></div>
+    <span class="social-divider-text">or continue with</span>
+    <div class="social-divider-line"></div>
+  </div>
+  <div class="social-row">
+    <a href="#" class="social-btn google" title="Continue with Google">
+      <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#ea4335" d="M5.26 9.77A7.23 7.23 0 0 1 12 4.8c1.73 0 3.29.62 4.52 1.64l3.37-3.37A11.97 11.97 0 0 0 12 0C7.38 0 3.36 2.7 1.36 6.65l3.9 3.12Z"/><path fill="#34a853" d="M16.04 18.01A7.23 7.23 0 0 1 12 19.2c-2.99 0-5.56-1.82-6.74-4.44l-3.9 3.1C3.36 21.3 7.38 24 12 24c3.27 0 6.14-1.23 8.32-3.26l-4.28-2.73Z"/><path fill="#fbbc05" d="M19.2 12c0-.74-.07-1.46-.2-2.16H12v4.09h4.04a3.46 3.46 0 0 1-1.5 2.26l4.28 2.73C20.55 17.06 21.6 14.7 21.6 12H19.2Z" transform="translate(1.2 0)"/><path fill="#4285f4" d="M1.36 6.65A11.97 11.97 0 0 0 0 12c0 1.9.44 3.68 1.26 5.26l3.9-3.1A7.18 7.18 0 0 1 4.8 12c0-.8.14-1.57.39-2.28l-3.83-3.07Z"/></svg>
+    </a>
+    <a href="#" class="social-btn twitter" title="Continue with X / Twitter">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="#1da1f2"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+    </a>
+    <a href="#" class="social-btn apple" title="Continue with Apple">
+      <svg width="16" height="18" viewBox="0 0 814 1000" fill="#111"><path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105-37.5-155.5-127.4C46.3 728.6 1 561.7 1 401.1c0-248.1 161.3-380 319.3-380 84.8 0 154.7 55.8 208 55.8 50.6 0 130.2-58.8 227.4-58.8zm-23.5-204.6c43.5-50.4 74.8-120.7 74.8-191 0-9.9-.9-19.8-2.6-28.8-71.4 2.6-156.4 47.5-207.4 107.4-39.3 45.1-75.3 115.8-75.3 187.1 0 10.5 1.5 21 2.1 24.3 4.7.7 9.4 1.5 14.1 1.5 65.6 0 144.6-42.5 194.3-100.5z"/></svg>
+    </a>
+    <a href="#" class="social-btn facebook" title="Continue with Facebook">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="#1877f2"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.514c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+    </a>
+  </div>
+
+  <div class="auth-switch">
+    Don't have an account? <a href="register.html">Create one →</a>
+  </div>
+</div>
+
+<script>
+function togglePw(inputId, btnId){
+  const inp = document.getElementById(inputId);
+  const ico = document.getElementById(btnId + 'Icon');
+  if(inp.type === 'password'){
+    inp.type = 'text';
+    ico.className = 'fa-regular fa-eye-slash';
+  } else {
+    inp.type = 'password';
+    ico.className = 'fa-regular fa-eye';
+  }
+}
+</script>
+</body>
+</html>

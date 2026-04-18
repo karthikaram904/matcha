@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Home 2 — Chado Matcha</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script>(function(){var t=localStorage.getItem("chado-theme"),d=localStorage.getItem("chado-dir");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");if(d==="rtl")document.documentElement.setAttribute("dir","rtl");})()</script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<style>
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html">
+  <img src="images/chado-matcha-logo.png" alt="Chado Matcha Logo">
+</a>
+    <ul class="nav-links">
+      <li class="has-dropdown"><a href="index.html" class='active'>Home</a>
+        <ul class="dropdown">
+          <li><a href="index.html">Home 1</a></li>
+          <li><a href="home2.html">Home 2</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html" >About</a></li>
+      <li><a href="matcha.html" >Matcha</a></li>
+      <li><a href="equipment.html" >Equipment</a></li>
+      <li><a href="workshops.html" >Workshops</a></li>
+      <li><a href="subscription.html" >Subscription</a></li>
+      <li><a href="contact.html" >Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="btn-theme" id="themeBtn" title="Dark mode">🌙</button>
+      <button class="btn-rtl" id="rtlBtn">RTL</button>
+      <button class="btn-login" id="loginBtnMobile"
+  style="border-color:rgba(255,255,255,0.4);"
+  onclick="window.location.href='login.html'">
+  Login
+</button>
+      <button class="nav-hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <div class="mobile-parent" id="mobileHomeToggle">
+      <a href="index.html" style="flex:1;">Home</a>
+      <span class="mobile-arrow" id="mobileHomeArrow">▾</span>
+    </div>
+    <div class="mobile-dropdown" id="mobileHomeDropdown">
+      <a href="index.html">Home 1</a>
+      <a href="home2.html">Home 2</a>
+    </div>
+    <a href="about.html">About Us</a>
+    <a href="matcha.html">Matcha</a>
+    <a href="equipment.html">Equipment</a>
+    <a href="workshops.html">Workshops</a>
+    <a href="subscription.html">Subscription</a>
+    <a href="contact.html">Contact Us</a>
+    <div class="nav-mobile-btns">
+      <button class="btn-theme" id="themeBtnMobile" style="width:38px;height:38px;font-size:16px;">🌙</button>
+      <button class="btn-rtl" id="rtlBtnMobile">RTL</button>
+      <button class="btn-login" id="loginBtnMobile"
+  style="border-color:rgba(255,255,255,0.4);"
+  onclick="window.location.href='login.html'">
+  Login
+</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="h2-hero">
+  <div class="h2-hero-left">
+    <div class="h2-tag"><div class="h2-tag-dot"></div><span class="h2-tag-text">Uji · Kyoto · Since 2019</span></div>
+    <h1 class="h2-h1">
+      <span>Where</span>
+      <span>stillness</span>
+      <span>meets <em>the leaf</em></span>
+    </h1>
+    <p class="h2-desc">A slower morning. A warmer ritual. Ceremonial matcha sourced directly from Uji's oldest family farms — stone-ground, shade-grown, delivered in 72 hours.</p>
+    <div class="h2-btns">
+      <a href="matcha.html"><button class="h2-btn-primary">Explore Matcha</button></a>
+      <a href="workshops.html"><button class="h2-btn-outline">Join a Workshop</button></a>
+    </div>
+  </div>
+  <div class="h2-hero-right">
+    <img src="images/home2-left.jpg" alt="Tea ceremony">
+  </div>
+ 
+  <div class="h2-scroll-hint"><div class="h2-scroll-line"></div>Scroll</div>
+</section>
+
+<!-- ── OUR HISTORY ── -->
+<section class="h2-history">
+  <div class="h2-history-inner">
+    <div class="h2-history-top">
+      <div class="h2-history-head anim-fade anim">
+        <div class="sec-label">Our History</div>
+        <div class="h2-section-title">A journey rooted<br/>in <em>1482</em></div>
+      </div>
+      <div class="h2-history-quote anim-left anim">
+        <p>"The first cup moistens my lips and throat. The second cup breaks my loneliness."</p>
+        <p style="font-size:17px;color:#4a7c3f;margin-top:10px;font-style:normal;letter-spacing:1px;">— Lu Tong, Tang dynasty</p>
+      </div>
+    </div>
+    <div class="h2-timeline">
+      <div class="h2-tl-item anim">
+        <div class="h2-tl-year">1482</div>
+        <div class="h2-tl-event">Uji matcha is born</div>
+        <p class="h2-tl-desc">The Yamashiro region of Uji cultivates the world's first dedicated tencha crop.</p>
+      </div>
+      <div class="h2-tl-item anim">
+        <div class="h2-tl-year">1600s</div>
+        <div class="h2-tl-event">Chado formalised</div>
+        <p class="h2-tl-desc">Sen no Rikyu codifies the Way of Tea — four principles: harmony, respect, purity.</p>
+      </div>
+      <div class="h2-tl-item anim">
+        <div class="h2-tl-year">2019</div>
+        <div class="h2-tl-event">Chado Matcha founded</div>
+        <p class="h2-tl-desc">After a pilgrimage through Uji, we signed our first direct-farm partnership.</p>
+      </div>
+      <div class="h2-tl-item active anim">
+        <div class="h2-tl-year">2025</div>
+        <div class="h2-tl-event">8,000+ subscribers</div>
+        <p class="h2-tl-desc">Three farm partnerships, pan-India delivery, and a community of tea.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY CHOOSE US ── -->
+<section class="h2-why">
+  <div class="h2-why-inner">
+    <div class="h2-why-grid">
+      <div class="h2-why-left anim-right anim">
+        <div class="sec-label">Why Choose Us</div>
+        <div class="h2-section-title">Not just matcha —<br/>a whole <em>practice</em></div>
+        <p>We don't just source matcha. We source the farmers, the philosophy, and the ceremony. Every decision we make traces back to one question: does this honour the leaf?</p>
+        <a href="about.html" class="h2-why-cta">Learn our approach →</a>
+      </div>
+      <div class="h2-why-right anim-left anim">
+        <div class="h2-why-item">
+          <div class="h2-why-num">01</div>
+          <div class="h2-why-title">Direct from farm</div>
+          <p class="h2-why-text">We visit every farm personally. No brokers, no blending, no mystery origin stories — just a farmer's name and a harvest date.</p>
+        </div>
+        <div class="h2-why-item">
+          <div class="h2-why-num">02</div>
+          <div class="h2-why-title">Stone-ground only</div>
+          <p class="h2-why-text">Industrial mills generate heat that degrades L-theanine and catechins. We insist on traditional granite millstones — slower, costlier, better.</p>
+        </div>
+        <div class="h2-why-item">
+          <div class="h2-why-num">03</div>
+          <div class="h2-why-title">72-hour freshness</div>
+          <p class="h2-why-text">Matcha oxidises fast. We air-seal every tin within 72 hours of grinding and ship directly — no warehouse, no ageing on shelves.</p>
+        </div>
+        <div class="h2-why-item">
+          <div class="h2-why-num">04</div>
+          <div class="h2-why-title">Community &amp; ceremony</div>
+          <p class="h2-why-text">Monthly workshops, harvest notes, and a growing community of practitioners. We teach the ritual, not just sell the ingredient.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES ── -->
+<section class="h2-services">
+  <div class="h2-services-inner">
+    <div class="h2-services-head anim-fade anim">
+      <div class="sec-label">What We Offer</div>
+      <div class="h2-section-title">Everything for your<br/><em>tea practice</em></div>
+    </div>
+    <div class="h2-services-grid">
+      <div class="h2-svc anim">
+        <div class="h2-svc-num">01</div>
+        
+        <div class="h2-svc-title">Ceremonial Matcha</div>
+        <p class="h2-svc-text">First and second harvest tins sourced directly from Uji — three grades from pure bowl preparation to everyday lattes.</p>
+        <a href="matcha.html" class="h2-svc-link">Shop matcha →</a>
+      </div>
+      <div class="h2-svc anim">
+        <div class="h2-svc-num">02</div>
+        
+        <div class="h2-svc-title">Brewing Equipment</div>
+        <p class="h2-svc-text">Authentic Japanese chasen, chawan, and chashaku — hand-selected from the same artisan workshops used in traditional tea.</p>
+        <a href="equipment.html" class="h2-svc-link">View equipment →</a>
+      </div>
+      <div class="h2-svc anim">
+        <div class="h2-svc-num">03</div>
+        
+
+        <div class="h2-svc-title">Monthly Subscription</div>
+        <p class="h2-svc-text">Curated seasonal harvests delivered to your door — with harvest notes, equipment surprises, and growing member.</p>
+        <a href="subscription.html" class="h2-svc-link">View plans →</a>
+      </div>
+      <div class="h2-svc anim">
+        <div class="h2-svc-num">04</div>
+      
+        <div class="h2-svc-title">Tea Workshops</div>
+        <p class="h2-svc-text">Intimate in-person chado sessions in Chennai and live online classes with our sensei from Kyoto — beginners always welcome.</p>
+        <a href="workshops.html" class="h2-svc-link">Book a workshop →</a>
+      </div>
+      <div class="h2-svc anim">
+        <div class="h2-svc-num">05</div>
+       
+        <div class="h2-svc-title">Gift Sets</div>
+        <p class="h2-svc-text">Beautifully boxed starter kits and full ceremony sets — the perfect introduction to the Way of Tea for someone you care about.</p>
+        <a href="matcha.html" class="h2-svc-link">See gift sets →</a>
+      </div>
+      <div class="h2-svc anim">
+        <div class="h2-svc-num">06</div>
+       
+        <div class="h2-svc-title">The Tea Journal</div>
+        <p class="h2-svc-text">Harvest notes, brewing guides, ceremony philosophy, and recipes — published monthly for our community of tea practitioners.</p>
+        <a href="blog.html" class="h2-svc-link">Read the journal →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ── -->
+<section class="h2-testi">
+  <div class="h2-testi-inner">
+    <div class="h2-testi-head">
+      <div class="anim-fade anim">
+        <div class="sec-label">What People Say</div>
+        <div class="h2-section-title">Voices from our<br/><em>tea circle</em></div>
+      </div>
+      <div class="h2-testi-nav">
+        <button class="h2-testi-arrow">&#8592;</button>
+        <button class="h2-testi-arrow">&#8594;</button>
+      </div>
+    </div>
+    <div class="h2-testi-track">
+      <div class="h2-testi-card anim">
+        <div class="h2-testi-rating"><div class="h2-tstar"></div><div class="h2-tstar"></div><div class="h2-tstar"></div><div class="h2-tstar"></div><div class="h2-tstar"></div></div>
+        <p class="h2-testi-quote">"The Uji Ceremonial changed my mornings entirely. I replaced coffee six months ago and I've never felt present at the start of my day."</p>
+        <div class="h2-testi-author">
+          <img class="h2-testi-avatar" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=80&q=80" alt="Priya">
+          <div><div class="h2-testi-name">Priya Menon</div><div class="h2-testi-loc">Yoga teacher · Bangalore</div></div>
+        </div>
+      </div>
+      <div class="h2-testi-card anim">
+        <div class="h2-testi-rating"><div class="h2-tstar"></div><div class="h2-tstar"></div><div class="h2-tstar"></div><div class="h2-tstar"></div><div class="h2-tstar"></div></div>
+        <p class="h2-testi-quote">"The Ceremony subscription is outstanding. Every month I discover something new — last month's harvest notes were extraordinary."</p>
+        <div class="h2-testi-author">
+          <img class="h2-testi-avatar" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&q=80" alt="Arjun">
+          <div><div class="h2-testi-name">Arjun Krishnaswamy</div><div class="h2-testi-loc">Designer · Chennai</div></div>
+        </div>
+      </div>
+      <div class="h2-testi-card anim">
+        <div class="h2-testi-rating"><div class="h2-tstar"></div><div class="h2-tstar"></div><div class="h2-tstar"></div><div class="h2-tstar"></div><div class="h2-tstar"></div></div>
+        <p class="h2-testi-quote">"The workshop was the most meditative two hours I've experienced. The sensei explained the philosophy so beautifully."</p>
+        <div class="h2-testi-author">
+          <img class="h2-testi-avatar" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80" alt="Meera">
+          <div><div class="h2-testi-name">Meera Iyer</div><div class="h2-testi-loc">Architect · Mumbai</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── GALLERY ── -->
+<section class="h2-gallery">
+  <div class="h2-gallery-inner">
+    <div class="h2-gallery-head">
+      <div class="anim-fade anim">
+        <div class="sec-label">Our Gallery</div>
+        <div class="h2-section-title">Stories in<br/><em>every frame</em></div>
+      </div>
+      <a href="#" class="h2-gallery-cta">View full gallery →</a>
+    </div>
+    <div class="h2-gallery-grid">
+      <div class="h2-gimg tall anim">
+        <img src="images/gallery18.webp" alt="Uji fields">
+        <div class="h2-gimg-overlay"><div class="h2-gimg-label">Shade-grown fields, Uji</div></div>
+      </div>
+      <div class="h2-gimg anim">
+        <img src="images/gallery13.webp" alt="Matcha bowl">
+        <div class="h2-gimg-overlay"><div class="h2-gimg-label">First harvest ceremonial bowl</div></div>
+      </div>
+      <div class="h2-gimg anim">
+        <img src="images/gallery15.webp" alt="Chasen whisk">
+        <div class="h2-gimg-overlay"><div class="h2-gimg-label">100-prong chasen whisk</div></div>
+      </div>
+      <div class="h2-gimg anim">
+        <img src="images/gallery12.webp" alt="Ceremony">
+        <div class="h2-gimg-overlay"><div class="h2-gimg-label">Morning ritual in Kyoto</div></div>
+      </div>
+      <div class="h2-gimg anim">
+        <img src="images/gallery19.webp" alt="Stone ground">
+        <div class="h2-gimg-overlay"><div class="h2-gimg-label">Stone-ground tencha leaves</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── BREWING EQUIPMENT ── -->
+<section class="h2-equip">
+  <div class="h2-equip-inner">
+    <div class="h2-equip-head anim-fade anim">
+      <div class="sec-label">Brewing Equipment</div>
+      <div class="h2-section-title">Craft tools for a<br/><em>perfect bowl</em></div>
+    </div>
+    <div class="h2-equip-grid">
+      <div class="h2-equip-item anim">
+        <img class="h2-equip-img" src="images/product-1.jpg" alt="Chasen">
+        <div class="h2-equip-name">Chasen Whisk</div>
+        <p class="h2-equip-desc">100-prong hand-carved bamboo from Takayama, Nara. Produces silky, stable foam.</p>
+        <div class="h2-equip-price">₹1,200</div>
+        <button class="h2-equip-btn">View details</button>
+      </div>
+      <div class="h2-equip-item anim">
+        <img class="h2-equip-img" src="images/product-2.jpg" alt="Chawan">
+        <div class="h2-equip-name">Chawan Bowl</div>
+        <p class="h2-equip-desc">Hand-thrown Shigaraki pottery. Wide mouth for whisking, thick walls to retain heat.</p>
+        <div class="h2-equip-price">₹2,800</div>
+        <button class="h2-equip-btn">View details</button>
+      </div>
+      <div class="h2-equip-item anim">
+        <img class="h2-equip-img" src="images/product-3.jpg" alt="Scoop">
+        <div class="h2-equip-name">Chashaku Scoop</div>
+        <p class="h2-equip-desc">Slender bamboo scoop cut to the traditional 2g measure. Essential for precision.</p>
+        <div class="h2-equip-price">₹450</div>
+        <button class="h2-equip-btn">View details</button>
+      </div>
+      <div class="h2-equip-item anim">
+        <img class="h2-equip-img" src="images/product-4.jpg" alt="Stand">
+        <div class="h2-equip-name">Whisk Stand</div>
+        <p class="h2-equip-desc">Ceramic stand that keeps whisk prongs curved and dry between ceremonies well curved and dry.</p>
+        <div class="h2-equip-price">₹680</div>
+        <button class="h2-equip-btn">View details</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── NEWSLETTER ── -->
+<section class="h2-news">
+  <div class="h2-news-inner">
+    <div class="h2-news-left anim-right anim">
+      <div class="sec-label">Stay Connected</div>
+      <div class="h2-section-title">Join the tea<br/><em>circle</em></div>
+      <p>Monthly harvest notes, ceremony guides, and exclusive early access to new tins. Plus a welcome gift of 10% off your first order.</p>
+      <div class="h2-news-perks">
+        <div class="h2-news-perk"><div class="h2-news-perk-dot"></div>Monthly harvest notes from Uji</div>
+        <div class="h2-news-perk"><div class="h2-news-perk-dot"></div>Exclusive subscriber-only tins</div>
+        <div class="h2-news-perk"><div class="h2-news-perk-dot"></div>Early access to workshop bookings</div>
+        <div class="h2-news-perk"><div class="h2-news-perk-dot"></div>10% off your first order</div>
+      </div>
+    </div>
+    <div class="h2-news-right anim-left anim">
+      <span class="h2-news-form-label">Subscribe to our newsletter</span>
+      <input class="h2-news-input" type="text" placeholder="Your full name"/>
+      <input class="h2-news-input" type="email" placeholder="Your email address"/>
+      <button class="h2-news-submit">Subscribe now</button>
+      <div class="h2-news-note">No spam. Unsubscribe anytime. Your details stay private.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <a href="index.html">
+  <img src="images/chado-matcha-logo.png" alt="Chado Matcha Logo">
+</a>
+        <p class="footer-tagline">Bringing the ancient art of Japanese tea ceremony to modern India. Sourced with care, delivered with intention.</p>
+      </div>
+      <div class="footer-col"><h4>Shop</h4><ul>
+        <li><a href="matcha.html">Ceremonial matcha</a></li>
+        <li><a href="matcha.html">Premium matcha</a></li>
+        <li><a href="matcha.html">Culinary grade</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="matcha.html">Gift sets</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Learn</h4><ul>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="about.html">Ceremony guide</a></li>
+        <li><a href="blog.html">Brewing tips</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="blog.html">Video tutorials</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Company</h4><ul>
+        <li><a href="about.html">Our story</a></li>
+        <li><a href="about.html">Our farms</a></li>
+        <li><a href="subscription.html">Subscription</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">Careers</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 Chado Matcha. All rights reserved.</div>
+      <div class="footer-badges"><span class="fbadge">JAS Organic</span><span class="fbadge">Direct Trade</span><span class="fbadge">Made in India</span></div>
+    </div>
+  </div>
+</footer>
+<a href="#" class="back-to-top">
+  <i class="bi bi-arrow-up"></i>
+</a>
+
+<script src="main.js"></script>
+</body>
+</html>

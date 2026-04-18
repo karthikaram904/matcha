@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>About Us — Chado Matcha</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script>(function(){var t=localStorage.getItem("chado-theme"),d=localStorage.getItem("chado-dir");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");if(d==="rtl")document.documentElement.setAttribute("dir","rtl");})()</script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<style>
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html">
+  <img src="images/chado-matcha-logo.png" alt="Chado Matcha Logo">
+</a>
+    <ul class="nav-links">
+      <li class="has-dropdown"><a href="index.html">Home</a>
+        <ul class="dropdown">
+          <li><a href="index.html">Home 1</a></li>
+          <li><a href="home2.html">Home 2</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="matcha.html" >Matcha</a></li>
+      <li><a href="equipment.html" >Equipment</a></li>
+      <li><a href="workshops.html" >Workshops</a></li>
+      <li><a href="subscription.html" >Subscription</a></li>
+      <li><a href="contact.html" >Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="btn-theme" id="themeBtn" title="Dark mode">🌙</button>
+      <button class="btn-rtl" id="rtlBtn">RTL</button>
+      <button class="btn-login" id="loginBtnMobile"
+  style="border-color:rgba(255,255,255,0.4);"
+  onclick="window.location.href='login.html'">
+  Login
+</button>
+      <button class="nav-hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <div class="mobile-parent" id="mobileHomeToggle">
+      <a href="index.html" style="flex:1;">Home</a>
+      <span class="mobile-arrow" id="mobileHomeArrow">▾</span>
+    </div>
+    <div class="mobile-dropdown" id="mobileHomeDropdown">
+      <a href="index.html">Home 1</a>
+      <a href="home2.html">Home 2</a>
+    </div>
+    <a href="about.html" class="active">About Us</a>
+    <a href="matcha.html">Matcha</a>
+    <a href="equipment.html">Equipment</a>
+    <a href="workshops.html">Workshops</a>
+    <a href="subscription.html">Subscription</a>
+    <a href="contact.html">Contact Us</a>
+    <div class="nav-mobile-btns">
+      <button class="btn-theme" id="themeBtnMobile" style="width:38px;height:38px;font-size:16px;">🌙</button>
+      <button class="btn-rtl" id="rtlBtnMobile">RTL</button>
+      <button class="btn-login" id="loginBtnMobile"
+  style="border-color:rgba(255,255,255,0.4);"
+  onclick="window.location.href='login.html'">
+  Login
+</button>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <style>.page-hero::before{background-image:url('images/about-bg.webp');}</style>
+  <div class="page-hero-inner">
+    <div class="hero-eyebrow">Our Story</div>
+    <h1 class="hero-h1">The people behind<br/><em>the practice</em></h1>
+    <p class="hero-p">We believe matcha is more than a drink — it is a living philosophy. Meet the team devoted to bringing that philosophy to India.</p>
+  </div>
+</section>
+
+<!-- WHO WE ARE -->
+<section class="sec grades-bg">
+  <div class="sec-inner">
+    <div class="about-grid">
+      <div class="anim-right anim">
+        <div class="sec-label">Who We Are</div>
+        <div class="sec-title">Rooted in <em>tradition</em></div>
+        <p class="sec-sub" style="max-width:100%;">Chado Matcha was founded in 2019 by a group of tea enthusiasts who fell in love with Japan's tea culture during a pilgrimage through Kyoto's Uji district. We came back determined to source the finest ceremonial matcha directly from the farmers who grow it — and share it with India.</p>
+        <p class="sec-sub" style="max-width:100%;margin-top:16px;">Today we partner with three family farms in Uji, each with generations of expertise in shade-growing and stone-grinding. Every tin travels from farm to your door in under 72 hours — sealed at peak freshness.</p>
+      </div>
+      <div class="anim-left anim">
+        <img src="images/about-7.jpg" alt="Tea ceremony" style="width:100%;border-radius:12px;object-fit:cover;height:380px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FUN FACTS COUNTER -->
+<section class="facts-bg">
+  <div class="sec-inner">
+    <div class="facts-grid">
+      <div class="fact-item anim">
+        <div class="fact-num"><span class="count-up" data-target="8000">0</span><span class="fact-plus">+</span></div>
+        <div class="fact-label">Happy subscribers across India</div>
+      </div>
+      <div class="fact-item anim">
+        <div class="fact-num"><span class="count-up" data-target="3">0</span><span class="fact-plus">+</span></div>
+        <div class="fact-label">Direct farm partnerships in Uji</div>
+      </div>
+      <div class="fact-item anim">
+        <div class="fact-num"><span class="count-up" data-target="72">0</span><span class="fact-plus">+</span></div>
+        <div class="fact-label">Farm to air-sealed tin delivery</div>
+      </div>
+      <div class="fact-item anim">
+        <div class="fact-num"><span class="count-up" data-target="500">0</span><span class="fact-plus">+</span></div>
+        <div class="fact-label">Years of Uji tea craft tradition</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION VISION VALUES -->
+<section class="sec mvv-bg">
+  <div class="sec-inner">
+    <div class="sec-header center anim-fade anim">
+      <div class="sec-label">Our Foundation</div>
+      <div class="sec-title" style="text-align:center;">Mission, Vision &amp; <em>Values</em></div>
+      <p class="sec-sub" style="text-align:center;margin:0 auto;">Three pillars that guide every decision — from the farms we partner with to the workshops we run.</p>
+    </div>
+    <div class="mvv-grid">
+
+      <!-- MISSION -->
+      <div class="mvv-card anim">
+        <div class="mvv-icon-wrap mission">
+          <i class="fa-solid fa-bullseye"></i>
+        </div>
+        <div class="mvv-tag mission">Our Mission</div>
+        <div class="mvv-title">Bring authentic<br/>matcha to India</div>
+        <p class="mvv-desc">To make the finest ceremonial-grade matcha accessible to every tea lover in India — sourced directly, delivered fresh, and accompanied by the philosophy that makes it meaningful.</p>
+        
+      </div>
+
+      <!-- VISION -->
+      <div class="mvv-card anim">
+        <div class="mvv-icon-wrap vision">
+          <i class="fa-solid fa-eye"></i>
+        </div>
+        <div class="mvv-tag vision">Our Vision</div>
+        <div class="mvv-title">A mindful India,<br/>one bowl at a time</div>
+        <p class="mvv-desc">We envision a world where the morning ritual is an act of mindfulness — where India's relationship with tea elevates from a habit to a practice rooted in presence and craft.</p>
+        
+      </div>
+
+      <!-- VALUES -->
+      <div class="mvv-card anim">
+        <div class="mvv-icon-wrap values">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="mvv-tag values">Our Values</div>
+        <div class="mvv-title">Honesty, craft,<br/>and the leaf</div>
+        <p class="mvv-desc">Four principles borrowed from the Way of Tea itself — harmony, respect, purity, and tranquility — guide every sourcing decision, customer interaction, and cup we brew.</p>
+        
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- OUR VALUES (image cards) -->
+<section class="sec values-bg">
+  <div class="sec-inner">
+    <div class="sec-header center anim-fade anim">
+      <div class="sec-label">What We Stand For</div>
+      <div class="sec-title" style="text-align:center;">Four principles, one <em>practice</em></div>
+    </div>
+    <div class="values-grid">
+      <div class="value-card anim">
+        <div class="value-card-img"><img src="images/about-1.jpg" alt="Direct sourcing"></div>
+        <div class="value-card-overlay"></div>
+        <div class="value-card-body">
+          <div class="value-card-num">01</div>
+          <div class="value-card-title">Direct Sourcing</div>
+          <p class="value-card-text">We visit every partner farm personally. No brokers, no blends — just a farmer's name and harvest date on every tin.</p>
+        </div>
+      </div>
+      <div class="value-card anim">
+        <div class="value-card-img"><img src="images/about-2.jpg" alt="Freshness"></div>
+        <div class="value-card-overlay"></div>
+        <div class="value-card-body">
+          <div class="value-card-num">02</div>
+          <div class="value-card-title">Freshness First</div>
+          <p class="value-card-text">Matcha oxidises fast. Every tin is air-sealed within 72 hours of grinding and dispatched without touching a warehouse shelf.</p>
+        </div>
+      </div>
+      <div class="value-card anim">
+        <div class="value-card-img"><img src="images/about-3.jpg" alt="Craft"></div>
+        <div class="value-card-overlay"></div>
+        <div class="value-card-body">
+          <div class="value-card-num">03</div>
+          <div class="value-card-title">Craft Over Convenience</div>
+          <p class="value-card-text">Traditional granite millstones cost more and grind slower. We choose them anyway — because the flavour difference is everything.</p>
+        </div>
+      </div>
+      <div class="value-card anim">
+        <div class="value-card-img"><img src="images/about-4.jpg" alt="Community"></div>
+        <div class="value-card-overlay"></div>
+        <div class="value-card-body">
+          <div class="value-card-num">04</div>
+          <div class="value-card-title">Ceremony</div>
+          <p class="value-card-text">We teach the ritual alongside selling the ingredient. Workshops, harvest notes, and a growing community of practitioners.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE TEAM -->
+<section class="sec team-bg">
+  <div class="sec-inner">
+    <div class="sec-header center anim-fade anim">
+      <div class="sec-label">The Team</div>
+      <div class="sec-title" style="text-align:center;">Meet the <em>tea circle</em></div>
+      <p class="sec-sub" style="text-align:center;margin:0 auto;">Three people united by a shared belief — that the daily ritual of preparing tea can change the way you experience your day.</p>
+    </div>
+    <div class="team-grid-new">
+
+      <div class="team-card-new anim">
+        <div class="team-img-wrap">
+          <img class="team-img-new" src="images/testi1.jpg" alt="Kavya Nair">
+          <div class="team-social-overlay">
+            <a href="#" class="team-social-btn"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="team-social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="team-social-btn"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="team-body-new">
+          <div class="team-name-new">Kavya Nair</div>
+          <div class="team-role-new">Co-founder &amp; Head of Sourcing</div>
+          
+        </div>
+      </div>
+
+      <div class="team-card-new anim">
+        <div class="team-img-wrap">
+          <img class="team-img-new" src="images/testi2.jpg" alt="Rohit Sharma">
+          <div class="team-social-overlay">
+            <a href="#" class="team-social-btn"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="team-social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="team-social-btn"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="team-body-new">
+          <div class="team-name-new">Rohit Sharma</div>
+          <div class="team-role-new">Co-founder &amp; Operations</div>
+          
+        </div>
+      </div>
+
+      <div class="team-card-new anim">
+        <div class="team-img-wrap">
+          <img class="team-img-new" src="images/testi3.jpg" alt="Anika Menon">
+          <div class="team-social-overlay">
+            <a href="#" class="team-social-btn"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="team-social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="team-social-btn"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="team-body-new">
+          <div class="team-name-new">Anika Menon</div>
+          <div class="team-role-new">Chado Practitioner &amp; Educator</div>
+         
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="sec newsletter-bg">
+  <div class="sec-inner">
+    <div class="newsletter-inner">
+      <div class="sec-label" style="text-align:center;">Newsletter</div>
+      <div class="sec-title" style="text-align:center;">Join the tea <em>circle</em></div>
+      <p class="sec-sub">Monthly harvest notes, ceremony guides, exclusive early access, and a welcome gift of 10% off your first order.</p>
+      <div class="email-row">
+        <input class="email-input" type="email" placeholder="Your email address"/>
+        <button class="btn-newsletter">Subscribe</button>
+      </div>
+      <div class="newsletter-note">No spam. Unsubscribe any time. Your details stay private.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <a href="index.html">
+  <img src="images/chado-matcha-logo.png" alt="Chado Matcha Logo">
+</a>
+        <p class="footer-tagline">Bringing the ancient art of Japanese tea ceremony to modern India. Sourced with care, delivered with intention.</p>
+      </div>
+      <div class="footer-col"><h4>Shop</h4><ul>
+        <li><a href="matcha.html">Ceremonial matcha</a></li>
+        <li><a href="matcha.html">Premium matcha</a></li>
+        <li><a href="matcha.html">Culinary grade</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="matcha.html">Gift sets</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Learn</h4><ul>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="about.html">Ceremony guide</a></li>
+        <li><a href="blog.html">Brewing tips</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="blog.html">Video tutorials</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Company</h4><ul>
+        <li><a href="about.html">Our story</a></li>
+        <li><a href="about.html">Our farms</a></li>
+        <li><a href="subscription.html">Subscription</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">Careers</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 Chado Matcha. All rights reserved.</div>
+      <div class="footer-badges"><span class="fbadge">JAS Organic</span><span class="fbadge">Direct Trade</span><span class="fbadge">Made in India</span></div>
+    </div>
+  </div>
+</footer>
+<a href="#" class="back-to-top">
+  <i class="bi bi-arrow-up"></i>
+</a>
+<script src="main.js"></script>
+<script>
+// Count-up animation
+function countUp(el){
+  const target = +el.dataset.target;
+  const duration = 2000;
+  const step = target / (duration / 16);
+  let current = 0;
+  const timer = setInterval(() => {
+    current += step;
+    if(current >= target){
+      current = target;
+      clearInterval(timer);
+    }
+    el.textContent = Math.floor(current).toLocaleString();
+  }, 16);
+}
+
+const countEls = document.querySelectorAll('.count-up');
+const countObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      countUp(entry.target);
+      countObserver.unobserve(entry.target);
+    }
+  });
+}, {threshold: 0.5});
+countEls.forEach(el => countObserver.observe(el));
+</script>
+</body>
+</html>

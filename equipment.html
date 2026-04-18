@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Equipment — Chado Matcha</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script>(function(){var t=localStorage.getItem("chado-theme"),d=localStorage.getItem("chado-dir");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");if(d==="rtl")document.documentElement.setAttribute("dir","rtl");})()</script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- NAV -->
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html">
+  <img src="images/chado-matcha-logo.png" alt="Chado Matcha Logo">
+</a>
+    <ul class="nav-links">
+      <li class="has-dropdown"><a href="index.html">Home</a>
+        <ul class="dropdown">
+          <li><a href="index.html">Home 1</a></li>
+          <li><a href="home2.html">Home 2</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html" >About</a></li>
+      <li><a href="matcha.html" >Matcha</a></li>
+      <li><a href="equipment.html" class="active">Equipment</a></li>
+      <li><a href="workshops.html" >Workshops</a></li>
+      <li><a href="subscription.html" >Subscription</a></li>
+      <li><a href="contact.html" >Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="btn-theme" id="themeBtn" title="Dark mode">🌙</button>
+      <button class="btn-rtl" id="rtlBtn">RTL</button>
+      <button class="btn-login" id="loginBtnMobile"
+  style="border-color:rgba(255,255,255,0.4);"
+  onclick="window.location.href='login.html'">
+  Login
+</button>
+      <button class="nav-hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <div class="mobile-parent" id="mobileHomeToggle">
+      <a href="index.html" style="flex:1;">Home</a>
+      <span class="mobile-arrow" id="mobileHomeArrow">▾</span>
+    </div>
+    <div class="mobile-dropdown" id="mobileHomeDropdown">
+      <a href="index.html">Home 1</a>
+      <a href="home2.html">Home 2</a>
+    </div>
+    <a href="about.html">About Us</a>
+    <a href="matcha.html">Matcha</a>
+    <a href="equipment.html" class="active">Equipment</a>
+    <a href="workshops.html">Workshops</a>
+    <a href="subscription.html">Subscription</a>
+    <a href="contact.html">Contact Us</a>
+    <div class="nav-mobile-btns">
+      <button class="btn-theme" id="themeBtnMobile" style="width:38px;height:38px;font-size:16px;">🌙</button>
+      <button class="btn-rtl" id="rtlBtnMobile">RTL</button>
+      <button class="btn-login" id="loginBtnMobile"
+  style="border-color:rgba(255,255,255,0.4);"
+  onclick="window.location.href='login.html'">
+  Login
+</button>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+
+<section class="page-hero">
+  <style>.page-hero::before{background-image:url('images/about-bg.webp');}</style>
+  <div class="page-hero-inner">
+    <div class="hero-eyebrow">Brewing Equipment</div>
+    <h1 class="hero-h1">Traditional tools for a<br/><em>perfect bowl</em></h1>
+    <p class="hero-p">Hand-selected Japanese utensils. Every piece chosen for authenticity, craftsmanship and the joy of the ceremony.</p>
+  </div>
+</section>
+
+<!-- ── 1. FARM TO CUP JOURNEY ── -->
+<section class="sec journey-bg">
+  <div class="sec-inner">
+    <div class="sec-header center anim-fade anim">
+      <div class="sec-label" style="color:#8aac7e;">The Matcha Journey</div>
+      <div class="sec-title" style="color:#fff;text-align:center;">From farm to <em style="color:#c8dfc2;">your cup</em></div>
+      <p class="sec-sub" style="color:rgba(255,255,255,0.55);text-align:center;margin:0 auto;">Four steps. Centuries of craft. Zero shortcuts.</p>
+    </div>
+    <div class="journey-steps">
+      <div class="journey-step anim">
+        <img class="journey-step-img" src="images/equip1.webp" alt="Cultivation">
+        <div class="journey-step-body">
+          <div class="journey-step-num">01</div>
+          <div class="journey-step-icon"><i class="fa-solid fa-seedling"></i></div>
+          <div class="journey-step-title">Cultivation</div>
+          <p class="journey-step-text">Shade cloth is drawn over the plants 21 days before harvest, boosting chlorophyll and L-theanine while suppressing.</p>
+        </div>
+      </div>
+      <div class="journey-step anim">
+        <img class="journey-step-img" src="images/equip12.webp" alt="Harvest">
+        <div class="journey-step-body">
+          <div class="journey-step-num">02</div>
+          <div class="journey-step-icon"><i class="fa-solid fa-scissors"></i></div>
+          <div class="journey-step-title">Harvest</div>
+          <p class="journey-step-text">Only the finest first-flush leaves are selected by hand. The stems and veins are removed, leaving pure tencha — the raw form.</p>
+        </div>
+      </div>
+      <div class="journey-step anim">
+        <img class="journey-step-img" src="images/equip13.webp" alt="Grinding">
+        <div class="journey-step-body">
+          <div class="journey-step-num">03</div>
+          <div class="journey-step-icon"><i class="fa-solid fa-circle-dot"></i></div>
+          <div class="journey-step-title">Stone Grinding</div>
+          <p class="journey-step-text">Tencha is fed slowly into traditional granite millstones. One stone grinds just 30g per hour — preserving every amino.</p>
+        </div>
+      </div>
+      <div class="journey-step anim">
+        <img class="journey-step-img" src="images/equip14.webp" alt="Packaging">
+        <div class="journey-step-body">
+          <div class="journey-step-num">04</div>
+          <div class="journey-step-icon"><i class="fa-solid fa-box"></i></div>
+          <div class="journey-step-title">Packaging</div>
+          <p class="journey-step-text">Tins are nitrogen-flushed and sealed within 72 hours of grinding. No warehouse, no ageing — straight to your door at peak freshness.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 2. GRADE COMPARISON TABLE ── -->
+<section class="sec compare-bg">
+  <div class="sec-inner">
+    <div class="sec-header center anim-fade anim">
+      <div class="sec-label">Grade Comparison</div>
+      <div class="sec-title" style="text-align:center;">Which grade is <em>right for you?</em></div>
+      <p class="sec-sub" style="text-align:center;margin:0 auto;">Same plant, same farm. Different harvests produce very different results.</p>
+    </div>
+    <div style="overflow-x:auto;">
+      <table class="compare-table anim-fade anim">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="cer">Uji Ceremonial</th>
+            <th class="pre">Nishio Premium</th>
+            <th class="cul">Shizuoka Culinary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Harvest</td>
+            <td>First flush · Spring</td>
+            <td>Second flush · Spring</td>
+            <td>Late harvest · Summer</td>
+          </tr>
+          <tr>
+            <td>Sweetness</td>
+            <td><div class="taste-bar"><div class="taste-dots"><div class="taste-dot fill"></div><div class="taste-dot fill"></div><div class="taste-dot fill"></div><div class="taste-dot fill"></div><div class="taste-dot fill"></div></div></div></td>
+            <td><div class="taste-bar"><div class="taste-dots"><div class="taste-dot fill"></div><div class="taste-dot fill"></div><div class="taste-dot fill"></div><div class="taste-dot empty"></div><div class="taste-dot empty"></div></div></div></td>
+            <td><div class="taste-bar"><div class="taste-dots"><div class="taste-dot fill"></div><div class="taste-dot fill"></div><div class="taste-dot empty"></div><div class="taste-dot empty"></div><div class="taste-dot empty"></div></div></div></td>
+          </tr>
+          <tr>
+            <td>Umami</td>
+            <td><div class="taste-bar"><div class="taste-dots"><div class="taste-dot fill"></div><div class="taste-dot fill"></div><div class="taste-dot fill"></div><div class="taste-dot fill"></div><div class="taste-dot fill"></div></div></div></td>
+            <td><div class="taste-bar"><div class="taste-dots"><div class="taste-dot fill"></div><div class="taste-dot fill"></div><div class="taste-dot fill"></div><div class="taste-dot fill"></div><div class="taste-dot empty"></div></div></div></td>
+            <td><div class="taste-bar"><div class="taste-dots"><div class="taste-dot fill"></div><div class="taste-dot fill"></div><div class="taste-dot empty"></div><div class="taste-dot empty"></div><div class="taste-dot empty"></div></div></div></td>
+          </tr>
+          <tr>
+            <td>Bitterness</td>
+            <td><div class="taste-bar"><div class="taste-dots"><div class="taste-dot fill"></div><div class="taste-dot empty"></div><div class="taste-dot empty"></div><div class="taste-dot empty"></div><div class="taste-dot empty"></div></div></div></td>
+            <td><div class="taste-bar"><div class="taste-dots"><div class="taste-dot fill"></div><div class="taste-dot fill"></div><div class="taste-dot empty"></div><div class="taste-dot empty"></div><div class="taste-dot empty"></div></div></div></td>
+            <td><div class="taste-bar"><div class="taste-dots"><div class="taste-dot fill"></div><div class="taste-dot fill"></div><div class="taste-dot fill"></div><div class="taste-dot fill"></div><div class="taste-dot empty"></div></div></div></td>
+          </tr>
+          <tr>
+            <td>Best for</td>
+            <td><span class="use-tag">Pure bowl</span><span class="use-tag">Ceremony</span></td>
+            <td><span class="use-tag">Latte</span><span class="use-tag">Daily use</span></td>
+            <td><span class="use-tag">Baking</span><span class="use-tag">Cooking</span></td>
+          </tr>
+          <tr>
+            <td>Price</td>
+            <td style="font-weight:500;">₹1,850 / 30g</td>
+            <td style="font-weight:500;">₹1,250 / 40g</td>
+            <td style="font-weight:500;">₹780 / 100g</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ── 3. FLAVOUR NOTES ── -->
+<section class="sec flavour-bg">
+  <div class="sec-inner">
+    <div class="flavour-grid">
+      <div class="anim-right anim">
+        <div class="sec-label">How to Taste Matcha</div>
+        <div class="sec-title">Four notes in<br/>every <em>sip</em></div>
+        <p class="sec-sub" style="max-width:100%;margin-bottom:32px;">Ceremonial matcha is a layered sensory experience. Each note reveals itself across your three deliberate sips.</p>
+        <div class="flavour-cards">
+          <div class="flavour-card anim">
+            <div class="flavour-card-icon umami"><i class="fa-solid fa-water"></i></div>
+            <div class="flavour-card-title">Umami</div>
+            <p class="flavour-card-text">A deep savoury richness from L-theanine.</p>
+          </div>
+          <div class="flavour-card anim">
+            <div class="flavour-card-icon sweet"><i class="fa-solid fa-candy-cane"></i></div>
+            <div class="flavour-card-title">Sweetness</div>
+            <p class="flavour-card-text">Natural sweetness from the shade-grown leaves.</p>
+          </div>
+          <div class="flavour-card anim">
+            <div class="flavour-card-icon bitter"><i class="fa-solid fa-circle-half-stroke"></i></div>
+            <div class="flavour-card-title">Bitterness</div>
+            <p class="flavour-card-text">A gentle, clean astringency balances.</p>
+          </div>
+          <div class="flavour-card anim">
+            <div class="flavour-card-icon aroma"><i class="fa-solid fa-wind"></i></div>
+            <div class="flavour-card-title">Aroma</div>
+            <p class="flavour-card-text">Grassy, vegetal, and fresh — the scent of first.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flavour-img-col anim-left anim">
+        <img class="flavour-img" src="images/about-2.jpg" alt="Matcha flavour">
+        <div class="flavour-float">
+          <div class="flavour-float-val">Koicha</div>
+          <div class="flavour-float-lbl">Thick ceremonial bowl</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 4. HEALTH SCIENCE ── -->
+<section class="sec science-bg">
+  <div class="sec-inner">
+    <div class="sec-header center anim-fade anim">
+      <div class="sec-label">Health Science</div>
+      <div class="sec-title" style="color:#fff;text-align:center;">What the research<br/><em>actually shows</em></div>
+      <p class="sec-sub" style="color:rgba(255,255,255,0.55);text-align:center;margin:0 auto;">Matcha has been studied by nutritional science for decades. Here is what the data says.</p>
+    </div>
+    <div class="science-grid">
+
+      <!-- Antioxidant chart -->
+      <div class="science-card anim">
+        <div class="science-card-label">Antioxidant Comparison</div>
+        <div class="science-card-title">ORAC score per serving</div>
+        <p class="science-card-text">Matcha delivers more antioxidants per cup than almost any other drink — measured by the ORAC (Oxygen Radical Absorbance Capacity) scale.</p>
+        <div class="chart-row">
+          <span class="chart-label">Matcha</span>
+          <div class="chart-track"><div class="chart-fill matcha" data-width="95"></div></div>
+          <span class="chart-val">1,384</span>
+        </div>
+        <div class="chart-row">
+          <span class="chart-label">Green tea</span>
+          <div class="chart-track"><div class="chart-fill green" data-width="30"></div></div>
+          <span class="chart-val">253</span>
+        </div>
+        <div class="chart-row">
+          <span class="chart-label">Coffee</span>
+          <div class="chart-track"><div class="chart-fill coffee" data-width="20"></div></div>
+          <span class="chart-val">~200</span>
+        </div>
+        <div class="chart-row">
+          <span class="chart-label">Black tea</span>
+          <div class="chart-track"><div class="chart-fill black" data-width="12"></div></div>
+          <span class="chart-val">~100</span>
+        </div>
+        <p style="font-size:12px;color:rgba(255,255,255,0.3);margin-top:12px;">Source: Journal of Chromatography, 2011. ORAC units per serving.</p>
+      </div>
+
+      <!-- Body timeline -->
+      <div class="science-card anim">
+        <div class="science-card-label">L-Theanine + Caffeine Effect</div>
+        <div class="science-card-title">What happens after you drink</div>
+        <p class="science-card-text">L-theanine binds with caffeine and changes how it is absorbed — delivering a calm, sustained effect instead of a spike.</p>
+        <div class="body-steps">
+          <div class="body-step">
+            <div class="body-time">0–15 min</div>
+            <div class="body-step-content">
+              <div class="body-step-title">L-theanine absorbed</div>
+              
+            </div>
+          </div>
+          <div class="body-step">
+            <div class="body-time">30 min</div>
+            <div class="body-step-content">
+              <div class="body-step-title">Caffeine peaks — smoothly</div>
+              
+            </div>
+          </div>
+          <div class="body-step">
+            <div class="body-time">2–4 hrs</div>
+            <div class="body-step-content">
+              <div class="body-step-title">Sustained focus window</div>
+              
+            </div>
+          </div>
+          <div class="body-step">
+            <div class="body-time">6 hrs</div>
+            <div class="body-step-content">
+              <div class="body-step-title">Clean comedown</div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── 5. QUICK BUY STRIP ── -->
+<section class="sec quickbuy-bg">
+  <div class="sec-inner">
+    <div class="sec-header center anim-fade anim">
+      <div class="sec-label">Best Sellers</div>
+      <div class="sec-title" style="text-align:center;">Ready to <em>begin?</em></div>
+      <p class="sec-sub" style="text-align:center;margin:0 auto;">Our three most-loved tins. Start anywhere — every grade is the right grade.</p>
+    </div>
+    <div class="quickbuy-grid">
+      <div class="qb-card anim">
+        <div class="qb-img-wrap">
+          <img class="qb-img" src="images/sell1.webp" alt="Uji Ceremonial">
+          <div class="qb-badge">Best seller</div>
+        </div>
+        <div class="qb-body">
+          <div class="qb-name">Uji Ceremonial</div>
+          <p class="qb-desc">First harvest · Uji, Kyoto · Sweet umami, zero bitterness. The purest bowl experience.</p>
+          <div class="qb-footer">
+            <div class="qb-price">₹1,850 <span>/ 30g</span></div>
+            <div class="qb-btns">
+              <button class="qb-btn-cart"><i class="fa-solid fa-cart-plus"></i> Add</button>
+              <button class="qb-btn-wish"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="qb-card anim">
+        <div class="qb-img-wrap">
+          <img class="qb-img" src="images/sell12.webp" alt="Nishio Premium">
+          <div class="qb-badge" style="background:#185fa5;">Most versatile</div>
+        </div>
+        <div class="qb-body">
+          <div class="qb-name">Nishio Premium</div>
+          <p class="qb-desc">Second harvest · Nishio · Bold grassy depth. Perfect for lattes and daily ritual.</p>
+          <div class="qb-footer">
+            <div class="qb-price">₹1,250 <span>/ 40g</span></div>
+            <div class="qb-btns">
+              <button class="qb-btn-cart"><i class="fa-solid fa-cart-plus"></i> Add</button>
+              <button class="qb-btn-wish"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="qb-card anim">
+        <div class="qb-img-wrap">
+          <img class="qb-img" src="images/sell13.webp" alt="Shizuoka Culinary">
+          <div class="qb-badge" style="background:#5a3900;">Best value</div>
+        </div>
+        <div class="qb-body">
+          <div class="qb-name">Shizuoka Culinary</div>
+          <p class="qb-desc">Late harvest · Shizuoka · Robust and bold. Built for baking, cooking, and smoothies.</p>
+          <div class="qb-footer">
+            <div class="qb-price">₹780 <span>/ 100g</span></div>
+            <div class="qb-btns">
+              <button class="qb-btn-cart"><i class="fa-solid fa-cart-plus"></i> Add</button>
+              <button class="qb-btn-wish"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- NEWSLETTER -->
+<section class="sec newsletter-bg">
+  <div class="sec-inner">
+    <div class="newsletter-inner">
+      <div class="sec-label" style="text-align:center;">Newsletter</div>
+      <div class="sec-title" style="text-align:center;">Join the tea <em>circle</em></div>
+      <p class="sec-sub">Monthly harvest notes, ceremony guides, exclusive early access, and a welcome gift of 10% off your first order.</p>
+      <div class="email-row">
+        <input class="email-input" type="email" placeholder="Your email address"/>
+        <button class="btn-newsletter">Subscribe</button>
+      </div>
+      <div class="newsletter-note">No spam. Unsubscribe any time. Your details stay private.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <a href="index.html">
+  <img src="images/chado-matcha-logo.png" alt="Chado Matcha Logo">
+</a>
+        <p class="footer-tagline">Bringing the ancient art of Japanese tea ceremony to modern India. Sourced with care, delivered with intention.</p>
+      </div>
+      <div class="footer-col"><h4>Shop</h4><ul>
+        <li><a href="matcha.html">Ceremonial matcha</a></li>
+        <li><a href="matcha.html">Premium matcha</a></li>
+        <li><a href="matcha.html">Culinary grade</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="matcha.html">Gift sets</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Learn</h4><ul>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="about.html">Ceremony guide</a></li>
+        <li><a href="blog.html">Brewing tips</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="blog.html">Video tutorials</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Company</h4><ul>
+        <li><a href="about.html">Our story</a></li>
+        <li><a href="about.html">Our farms</a></li>
+        <li><a href="subscription.html">Subscription</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">Careers</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 Chado Matcha. All rights reserved.</div>
+      <div class="footer-badges"><span class="fbadge">JAS Organic</span><span class="fbadge">Direct Trade</span><span class="fbadge">Made in India</span></div>
+    </div>
+  </div>
+</footer>
+<a href="#" class="back-to-top">
+  <i class="bi bi-arrow-up"></i>
+</a>
+
+<script src="main.js"></script>
+<script>
+// Animate chart bars on scroll
+const fills = document.querySelectorAll('.chart-fill');
+const chartObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.width = e.target.dataset.width + '%';
+      chartObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.5 });
+fills.forEach(f => chartObs.observe(f));
+</script>
+</body>
+</html>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Subscription — Chado Matcha</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script>(function(){var t=localStorage.getItem("chado-theme"),d=localStorage.getItem("chado-dir");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");if(d==="rtl")document.documentElement.setAttribute("dir","rtl");})()</script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<style>
+p{font-size:17px;}
+
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html">
+  <img src="images/chado-matcha-logo.png" alt="Chado Matcha Logo">
+</a>
+    <ul class="nav-links">
+      <li class="has-dropdown"><a href="index.html">Home</a>
+        <ul class="dropdown">
+          <li><a href="index.html">Home 1</a></li>
+          <li><a href="home2.html">Home 2</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html" >About</a></li>
+      <li><a href="matcha.html" >Matcha</a></li>
+      <li><a href="equipment.html" >Equipment</a></li>
+      <li><a href="workshops.html" >Workshops</a></li>
+      <li><a href="subscription.html" class="active">Subscription</a></li>
+      <li><a href="contact.html" >Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="btn-theme" id="themeBtn" title="Dark mode">🌙</button>
+      <button class="btn-rtl" id="rtlBtn">RTL</button>
+      <button class="btn-login" id="loginBtnMobile"
+  style="border-color:rgba(255,255,255,0.4);"
+  onclick="window.location.href='login.html'">
+  Login
+</button>
+      <button class="nav-hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <div class="mobile-parent" id="mobileHomeToggle">
+      <a href="index.html" style="flex:1;">Home</a>
+      <span class="mobile-arrow" id="mobileHomeArrow">▾</span>
+    </div>
+    <div class="mobile-dropdown" id="mobileHomeDropdown">
+      <a href="index.html">Home 1</a>
+      <a href="home2.html">Home 2</a>
+    </div>
+    <a href="about.html">About Us</a>
+    <a href="matcha.html">Matcha</a>
+    <a href="equipment.html">Equipment</a>
+    <a href="workshops.html">Workshops</a>
+    <a href="subscription.html" class="active">Subscription</a>
+    <a href="contact.html">Contact Us</a>
+    <div class="nav-mobile-btns">
+      <button class="btn-theme" id="themeBtnMobile" style="width:38px;height:38px;font-size:16px;">🌙</button>
+      <button class="btn-rtl" id="rtlBtnMobile">RTL</button>
+      <button class="btn-login" id="loginBtnMobile"
+  style="border-color:rgba(255,255,255,0.4);"
+  onclick="window.location.href='login.html'">
+  Login
+</button>
+    </div>
+  </div>
+</nav>
+<!-- PAGE HERO -->
+
+<section class="page-hero">
+  <style>.page-hero::before{background-image:url('images/about-bg.webp');}</style>
+  <div class="page-hero-inner">
+    <div class="hero-eyebrow">Monthly Tea Delivery</div>
+    <h1 class="hero-h1">The Chado<br/><em>subscription</em></h1>
+    <p class="hero-p">Fresh matcha at your door, every month. Curated seasonal harvests. Cancel or pause anytime first allocation of every new harvest.</p>
+  </div>
+</section>
+
+<!-- ── HOW IT WORKS ── -->
+<section class="sec how-bg">
+  <div class="sec-inner">
+    <div class="sec-header center anim-fade anim">
+      <div class="sec-label">How It Works</div>
+      <div class="sec-title" style="text-align:center;">Four simple <em>steps</em></div>
+      <p class="sec-sub" style="text-align:center;margin:0 auto;">From choosing your plan to your first ritual — here is exactly what happens.</p>
+    </div>
+    <div class="how-grid">
+      <div class="how-step anim">
+        <div class="how-icon-wrap">
+          <i class="fa-solid fa-hand-pointer"></i>
+          <div class="how-step-num">1</div>
+        </div>
+        <div class="how-connector"></div>
+        <div class="how-step-title">Choose your plan</div>
+        <p class="how-step-text">Pick the grade and quantity that suits your practice. Monthly, 2-month, or 3-month — each with increasing savings.</p>
+      </div>
+      <div class="how-step anim">
+        <div class="how-icon-wrap">
+          <i class="fa-solid fa-box"></i>
+          <div class="how-step-num">2</div>
+        </div>
+        <div class="how-connector"></div>
+        <div class="how-step-title">We ship fresh matcha</div>
+        <p class="how-step-text">Your tin is air-sealed within 72 hours of grinding and dispatched on the 1st of every month — direct from our Uji partners.</p>
+      </div>
+      <div class="how-step anim">
+        <div class="how-icon-wrap">
+          <i class="fa-solid fa-mug-hot"></i>
+          <div class="how-step-num">3</div>
+        </div>
+        <div class="how-connector"></div>
+        <div class="how-step-title">Enjoy your ritual</div>
+        <p class="how-step-text">Unbox, read your harvest note, and brew your first bowl. Each delivery includes something new — a surprise equipment piece or seasonal single-origin tin.</p>
+      </div>
+      <div class="how-step anim">
+        <div class="how-icon-wrap">
+          <i class="fa-solid fa-rotate"></i>
+          <div class="how-step-num">4</div>
+        </div>
+        <div class="how-step-title">Repeat every month</div>
+        <p class="how-step-text">Your next box ships automatically. Change your tier, pause for up to 3 months, or cancel anytime — no questions asked.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SUBSCRIPTION PLANS ── -->
+<section class="sec plans-bg">
+  <div class="sec-inner">
+    <div class="sec-header center anim-fade anim">
+      <div class="sec-label">Subscription Plans</div>
+      <div class="sec-title" style="text-align:center;">Choose your <em>commitment</em></div>
+      <p class="sec-sub" style="text-align:center;margin:0 auto;">All plans include free shipping and a seasonal harvest note. Longer plans save more.</p>
+    </div>
+
+    <!-- Billing toggle -->
+    <div class="billing-toggle">
+      <span class="billing-label active" id="monthlyLabel">Monthly</span>
+      <div class="toggle-track" id="billingToggle"><div class="toggle-thumb"></div></div>
+      <span class="billing-label" id="annualLabel">3-month bundle</span>
+      <span class="billing-save-pill" id="savePill">Save up to 20%</span>
+    </div>
+
+    <div class="plans-grid">
+
+      <!-- Starter Monthly -->
+      <div class="plan-card anim">
+        <div class="plan-card-top">
+          <img class="plan-card-img" src="images/sub1.webp" alt="Starter">
+        </div>
+        <div class="plan-body">
+          <div class="plan-duration" id="starter-duration">Monthly</div>
+          <div class="plan-name">Starter</div>
+          <div class="plan-grade">Nishio Premium · 30g tin</div>
+          <div class="plan-price-row">
+            <div class="plan-price" id="starter-price">₹799</div>
+            <span class="plan-per">/month</span>
+          </div>
+          <div class="plan-original" id="starter-original" style="visibility:hidden;">₹999/month</div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li class="plan-feature"><i class="fa-solid fa-circle-check"></i>30g seasonal matcha tin</li>
+            <li class="plan-feature"><i class="fa-solid fa-circle-check"></i>Handwritten harvest note card</li>
+            <li class="plan-feature"><i class="fa-solid fa-circle-check"></i>Member discount (5%)</li>
+            <li class="plan-feature"><i class="fa-solid fa-circle-check"></i>Free shipping</li>
+            <li class="plan-feature muted"><i class="fa-solid fa-circle-xmark"></i>Equipment surprise</li>
+            <li class="plan-feature muted"><i class="fa-solid fa-circle-xmark"></i>Workshop access</li>
+          </ul>
+          <div class="plan-cta">
+            <button class="plan-btn plan-btn-outline">Get started</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ceremony — Featured -->
+      <div class="plan-card featured anim">
+        <div class="plan-card-top">
+          <img class="plan-card-img" src="images/sub12.webp" alt="Ceremony">
+          <div class="plan-popular-badge"><i class="fa-solid fa-star"></i> Most popular</div>
+          <div class="plan-save-badge" id="ceremony-save-badge" style="display:none;">Save 15%</div>
+        </div>
+        <div class="plan-body">
+          <div class="plan-duration" id="ceremony-duration">Monthly</div>
+          <div class="plan-name">Ceremony</div>
+          <div class="plan-grade">Uji Ceremonial · 2 × 30g tins</div>
+          <div class="plan-price-row">
+            <div class="plan-price" id="ceremony-price">₹1,499</div>
+            <span class="plan-per">/month</span>
+          </div>
+          <div class="plan-original" id="ceremony-original" style="visibility:hidden;">₹1,799/month</div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li class="plan-feature"><i class="fa-solid fa-circle-check"></i>2 × 30g seasonal tins</li>
+            <li class="plan-feature"><i class="fa-solid fa-circle-check"></i>Monthly equipment surprise</li>
+            <li class="plan-feature"><i class="fa-solid fa-circle-check"></i>1 free online workshop/month</li>
+            <li class="plan-feature"><i class="fa-solid fa-circle-check"></i>Member discount (12%)</li>
+            <li class="plan-feature"><i class="fa-solid fa-circle-check"></i>Exclusive harvest notes</li>
+            <li class="plan-feature muted"><i class="fa-solid fa-circle-xmark"></i>Personal tea profile</li>
+          </ul>
+          <div class="plan-cta">
+            <button class="plan-btn plan-btn-dark">Subscribe now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sensei -->
+      <div class="plan-card anim">
+        <div class="plan-card-top">
+          <img class="plan-card-img" src="images/sub13.webp" alt="Sensei">
+          <div class="plan-save-badge" id="sensei-save-badge" style="display:none;">Save 20%</div>
+        </div>
+        <div class="plan-body">
+          <div class="plan-duration" id="sensei-duration">Monthly</div>
+          <div class="plan-name">Sensei</div>
+          <div class="plan-grade">Uji Ceremonial · 3 × premium tins</div>
+          <div class="plan-price-row">
+            <div class="plan-price" id="sensei-price">₹2,800</div>
+            <span class="plan-per">/month</span>
+          </div>
+          <div class="plan-original" id="sensei-original" style="visibility:hidden;">₹3,500/month</div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li class="plan-feature"><i class="fa-solid fa-circle-check"></i>3 × premium ceremonial tins</li>
+            <li class="plan-feature"><i class="fa-solid fa-circle-check"></i>Monthly curated equipment</li>
+            <li class="plan-feature"><i class="fa-solid fa-circle-check"></i>Unlimited workshop access</li>
+            <li class="plan-feature"><i class="fa-solid fa-circle-check"></i>Member discount (20%)</li>
+            <li class="plan-feature"><i class="fa-solid fa-circle-check"></i>Personalized tea profile</li>
+            <li class="plan-feature"><i class="fa-solid fa-circle-check"></i>Priority new releases</li>
+          </ul>
+          <div class="plan-cta">
+            <button class="plan-btn plan-btn-outline">Get started</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── BENEFITS ── -->
+<section class="sec benefits2-bg">
+  <div class="sec-inner">
+    <div class="benefits2-grid">
+      <div class="benefits2-img-col anim-right anim">
+        <img class="benefits2-img" src="images/sub.webp" alt="Subscription benefits">
+        <div class="benefits2-float">
+          <div class="benefits2-float-num">8,000+</div>
+          <div class="benefits2-float-lbl">Active subscribers</div>
+        </div>
+      </div>
+      <div class="anim-left anim">
+        <div class="sec-label">Why Subscribe?</div>
+        <div class="sec-title">More value, every <em>month</em></div>
+        <p class="sec-sub" style="max-width:100%;margin-bottom:0;">Subscribing isn't just cheaper — it's fresher. Each box is prepared to order, not pulled from shelves.</p>
+        <div class="benefits2-list">
+          <div class="benefit2-item">
+            <div class="benefit2-icon"><i class="fa-solid fa-tag"></i></div>
+            <div>
+              <div class="benefit2-title">Discounted price vs one-time</div>
+              <p class="benefit2-text">Save up to 20% compared to buying the same tins individually. The longer your plan, the more you save.</p>
+            </div>
+          </div>
+          <div class="benefit2-item">
+            <div class="benefit2-icon"><i class="fa-solid fa-bolt"></i></div>
+            <div>
+              <div class="benefit2-title">Priority fresh batches</div>
+              <p class="benefit2-text">Subscribers receive the first allocation of every new harvest — before it goes on public sale.</p>
+            </div>
+          </div>
+          <div class="benefit2-item">
+            <div class="benefit2-icon"><i class="fa-solid fa-truck"></i></div>
+            <div>
+              <div class="benefit2-title">Free shipping, always</div>
+              <p class="benefit2-text">Every subscription box ships free across India, no minimum order, no conditions. Every month.</p>
+            </div>
+          </div>
+          <div class="benefit2-item">
+            <div class="benefit2-icon"><i class="fa-solid fa-leaf"></i></div>
+            <div>
+              <div class="benefit2-title">Early access to new harvest</div>
+              <p class="benefit2-text">First-flush Uji tins and limited seasonal releases go to subscribers first — often before we announce publicly.</p>
+            </div>
+          </div>
+          <div class="benefit2-item">
+            <div class="benefit2-icon"><i class="fa-solid fa-gift"></i></div>
+            <div>
+              <div class="benefit2-title">Exclusive member offers</div>
+              <p class="benefit2-text">Members-only discounts on equipment, workshop bookings, and special collaborations throughout the year.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ACCORDION ── -->
+<section class="sec faq-bg">
+  <div class="sec-inner">
+    <div class="sec-header center anim-fade anim">
+      <div class="sec-label">FAQ</div>
+      <div class="sec-title" style="text-align:center;">Subscription <em>questions</em></div>
+    </div>
+    <div style="max-width:780px;margin:0 auto;">
+      <div class="faq-acc-item anim">
+        <div class="faq-acc-q"><span class="faq-acc-q-text">What's included in each box?</span><div class="faq-acc-icon"><i class="fa-solid fa-plus"></i></div></div>
+        <div class="faq-acc-body"><p class="faq-acc-text">Your chosen tier's matcha tins, a handwritten harvest note card, and any surprise equipment or samples for Ceremony and Sensei tiers.</p></div>
+      </div>
+      <div class="faq-acc-item anim">
+        <div class="faq-acc-q"><span class="faq-acc-q-text">Can I pause or cancel?</span><div class="faq-acc-icon"><i class="fa-solid fa-plus"></i></div></div>
+        <div class="faq-acc-body"><p class="faq-acc-text">Yes — pause for up to 3 months or cancel anytime from your account dashboard. No cancellation fees, no lock-ins of any kind.</p></div>
+      </div>
+      <div class="faq-acc-item anim">
+        <div class="faq-acc-q"><span class="faq-acc-q-text">When does my box ship each month?</span><div class="faq-acc-icon"><i class="fa-solid fa-plus"></i></div></div>
+        <div class="faq-acc-body"><p class="faq-acc-text">Boxes are dispatched on the 1st of each month. You will receive a tracking link by email as soon as your box is collected. Delivery takes 2–5 days depending on your location.</p></div>
+      </div>
+      <div class="faq-acc-item anim">
+        <div class="faq-acc-q"><span class="faq-acc-q-text">Can I upgrade or downgrade my plan?</span><div class="faq-acc-icon"><i class="fa-solid fa-plus"></i></div></div>
+        <div class="faq-acc-body"><p class="faq-acc-text">Absolutely — change your tier or billing cycle any time before the 28th of the month. The new plan takes effect from the following month's dispatch.</p></div>
+      </div>
+      <div class="faq-acc-item anim">
+        <div class="faq-acc-q"><span class="faq-acc-q-text">What if I don't like my tin?</span><div class="faq-acc-icon"><i class="fa-solid fa-plus"></i></div></div>
+        <div class="faq-acc-body"><p class="faq-acc-text">We stand behind every tin we send. If you are unsatisfied for any reason, contact us within 7 days of delivery and we will send a replacement or issue a full refund — no questions asked.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="sec newsletter-bg">
+  <div class="sec-inner">
+    <div class="newsletter-inner">
+      <div class="sec-label" style="text-align:center;">Newsletter</div>
+      <div class="sec-title" style="text-align:center;">Join the tea <em>circle</em></div>
+      <p class="sec-sub">Monthly harvest notes, ceremony guides, exclusive early access, and a welcome gift of 10% off your first order.</p>
+      <div class="email-row">
+        <input class="email-input" type="email" placeholder="Your email address"/>
+        <button class="btn-newsletter">Subscribe</button>
+      </div>
+      <div class="newsletter-note">No spam. Unsubscribe any time. Your details stay private.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <a href="index.html">
+  <img src="images/chado-matcha-logo.png" alt="Chado Matcha Logo">
+</a>
+        <p class="footer-tagline">Bringing the ancient art of Japanese tea ceremony to modern India. Sourced with care, delivered with intention.</p>
+      </div>
+      <div class="footer-col"><h4>Shop</h4><ul>
+        <li><a href="matcha.html">Ceremonial matcha</a></li>
+        <li><a href="matcha.html">Premium matcha</a></li>
+        <li><a href="matcha.html">Culinary grade</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="matcha.html">Gift sets</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Learn</h4><ul>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="about.html">Ceremony guide</a></li>
+        <li><a href="blog.html">Brewing tips</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="blog.html">Video tutorials</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Company</h4><ul>
+        <li><a href="about.html">Our story</a></li>
+        <li><a href="about.html">Our farms</a></li>
+        <li><a href="subscription.html">Subscription</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">Careers</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 Chado Matcha. All rights reserved.</div>
+      <div class="footer-badges"><span class="fbadge">JAS Organic</span><span class="fbadge">Direct Trade</span><span class="fbadge">Made in India</span></div>
+    </div>
+  </div>
+</footer>
+<a href="#" class="back-to-top">
+  <i class="bi bi-arrow-up"></i>
+</a>
+
+<script src="main.js"></script>
+<script>
+// Billing toggle
+const toggle = document.getElementById('billingToggle');
+const monthlyLabel = document.getElementById('monthlyLabel');
+const annualLabel = document.getElementById('annualLabel');
+let is3month = false;
+
+const plans = {
+  starter:  { monthly: '₹799',   bundle: '₹679',   orig: '₹799/month' },
+  ceremony: { monthly: '₹1,499', bundle: '₹1,274', orig: '₹1,499/month' },
+  sensei:   { monthly: '₹2,800', bundle: '₹2,240', orig: '₹2,800/month' },
+};
+
+toggle.addEventListener('click', () => {
+  is3month = !is3month;
+  toggle.classList.toggle('on', is3month);
+  monthlyLabel.classList.toggle('active', !is3month);
+  annualLabel.classList.toggle('active', is3month);
+
+  Object.keys(plans).forEach(key => {
+    const priceEl = document.getElementById(key + '-price');
+    const origEl  = document.getElementById(key + '-original');
+    const durEl   = document.getElementById(key + '-duration');
+    const badgeEl = document.getElementById(key + '-save-badge');
+    if (is3month) {
+      priceEl.textContent  = plans[key].bundle;
+      origEl.textContent   = plans[key].orig;
+      origEl.style.visibility = 'visible';
+      if (durEl) durEl.textContent = '3-month bundle';
+      if (badgeEl) badgeEl.style.display = 'block';
+    } else {
+      priceEl.textContent  = plans[key].monthly;
+      origEl.style.visibility = 'hidden';
+      if (durEl) durEl.textContent = 'Monthly';
+      if (badgeEl) badgeEl.style.display = 'none';
+    }
+  });
+});
+
+// FAQ accordion
+document.querySelectorAll('.faq-acc-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item   = q.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-acc-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>

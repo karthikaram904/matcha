@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact Us — Chado Matcha</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script>(function(){var t=localStorage.getItem("chado-theme"),d=localStorage.getItem("chado-dir");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");if(d==="rtl")document.documentElement.setAttribute("dir","rtl");})()</script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html">
+  <img src="images/chado-matcha-logo.png" alt="Chado Matcha Logo">
+</a>
+    <ul class="nav-links">
+      <li class="has-dropdown"><a href="index.html">Home</a>
+        <ul class="dropdown">
+          <li><a href="index.html">Home 1</a></li>
+          <li><a href="home2.html">Home 2</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html" >About</a></li>
+      <li><a href="matcha.html" >Matcha</a></li>
+      <li><a href="equipment.html" >Equipment</a></li>
+      <li><a href="workshops.html" >Workshops</a></li>
+      <li><a href="subscription.html" >Subscription</a></li>
+      <li><a href="contact.html"class="active" >Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="btn-theme" id="themeBtn" title="Dark mode">🌙</button>
+      <button class="btn-rtl" id="rtlBtn">RTL</button>
+      <button class="btn-login" id="loginBtnMobile"
+  style="border-color:rgba(255,255,255,0.4);"
+  onclick="window.location.href='login.html'">
+  Login
+</button>
+      <button class="nav-hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <div class="mobile-parent" id="mobileHomeToggle">
+      <a href="index.html" style="flex:1;">Home</a>
+      <span class="mobile-arrow" id="mobileHomeArrow">▾</span>
+    </div>
+    <div class="mobile-dropdown" id="mobileHomeDropdown">
+      <a href="index.html">Home 1</a>
+      <a href="home2.html">Home 2</a>
+    </div>
+    <a href="about.html">About Us</a>
+    <a href="matcha.html">Matcha</a>
+    <a href="equipment.html">Equipment</a>
+    <a href="workshops.html">Workshops</a>
+    <a href="subscription.html">Subscription</a>
+    <a href="contact.html" class="active">Contact Us</a>
+    <div class="nav-mobile-btns">
+      <button class="btn-theme" id="themeBtnMobile" style="width:38px;height:38px;font-size:16px;">🌙</button>
+      <button class="btn-rtl" id="rtlBtnMobile">RTL</button>
+      <button class="btn-login" id="loginBtnMobile"
+  style="border-color:rgba(255,255,255,0.4);"
+  onclick="window.location.href='login.html'">
+  Login
+</button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <style>.page-hero::before{background-image:url('images/about-bg.webp');}</style>
+  <div class="page-hero-inner">
+   <div class="hero-eyebrow">Contact Us</div>
+    <h1 class="hero-h1">Get in touch with<br/><em>our team</em></h1>
+    <p class="hero-p">Questions about orders, workshops, wholesale, or just want to talk matcha — we would love to hear from you.</p>
+  </div>
+</section>
+<section class="sec grades-bg">
+  <div class="sec-inner">
+    <div class="contact-grid">
+      <div class="contact-form anim-right anim">
+        <div class="sec-label" style="margin-bottom:20px;">Send a message</div>
+        <div class="form-group"><label>Full name</label><input type="text" placeholder="Your name"/></div>
+        <div class="form-group"><label>Email address</label><input type="email" placeholder="you@example.com"/></div>
+        <div class="form-group"><label>Subject</label>
+          <select>
+            <option>Order enquiry</option>
+            <option>Workshop booking</option>
+            <option>Wholesale / B2B</option>
+            <option>Press &amp; media</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Message</label><textarea placeholder="Tell us how we can help..."></textarea></div>
+        <button class="btn-submit">Send message</button>
+      </div>
+      <div class="anim-left anim" style="padding-top:8px;">
+        <div class="sec-label" style="margin-bottom:28px;">Find us</div>
+        <div class="contact-info-item"><div class="contact-icon">📍</div><div><div class="contact-info-label">Address</div><div class="contact-info-val">12, Chamiers Road, Nandanam<br/>Chennai, Tamil Nadu 600035</div></div></div>
+        <div class="contact-info-item"><div class="contact-icon">✉️</div><div><div class="contact-info-label">Email</div><div class="contact-info-val">hello@chadomatchaindia.com</div></div></div>
+        <div class="contact-info-item"><div class="contact-icon">📞</div><div><div class="contact-info-label">Phone</div><div class="contact-info-val">+91 98400 00000</div></div></div>
+        <div class="contact-info-item"><div class="contact-icon">🕐</div><div><div class="contact-info-label">Hours</div><div class="contact-info-val">Mon–Sat · 10am – 6pm IST</div></div></div>
+        <div style="margin-top:32px;background:#e8f2e1;border-radius:12px;padding:24px;">
+          <div class="sec-label" style="margin-bottom:12px;">Workshop enquiries</div>
+          <p style="font-size:15px;color:#4a5e45;line-height:1.7;">For group bookings of 8 or more, or to enquire about private ceremony experiences, email us directly at <strong>workshops@chadomatchaindia.com</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- HTML — contact.html la paste pannu (newsletter ku mela) -->
+<section class="sec map-bg">
+  <div class="sec-inner">
+    <div class="sec-header anim-fade anim">
+      <div class="sec-label">Find Us</div>
+      <div class="sec-title">Visit our <em>store</em></div>
+      <p class="sec-sub">Come experience ceremonial matcha in person. Our studio in Chennai is open six days a week.</p>
+    </div>
+    <div class="map-grid">
+      <div class="map-embed-wrap anim-right anim">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.0!2d80.2457!3d13.0418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52678b6e5c4e1f%3A0x0!2sNandanam%2C+Chennai%2C+Tamil+Nadu!5e0!3m2!1sen!2sin!4v1700000000000"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Chado Matcha Chennai location">
+        </iframe>
+      </div>
+      <div class="map-info-col anim-left anim">
+        <div class="map-info-card">
+          <div class="map-info-card-title">Contact Details</div>
+          
+          
+          <a href="https://maps.google.com/?q=Nandanam,Chennai" target="_blank" class="map-directions-btn">
+            <span>↗</span> Get directions
+          </a>
+        </div>
+        <div class="map-info-card">
+          <div class="map-info-card-title">Opening Hours</div>
+          <div class="map-hours-row today">
+            <div style="display:flex;align-items:center;gap:8px;"><div class="map-hours-dot today"></div><span class="map-hours-day">Monday</span></div>
+            <span class="map-hours-time">10am – 6pm</span>
+          </div>
+          <div class="map-hours-row">
+            <div style="display:flex;align-items:center;gap:8px;"><div class="map-hours-dot open"></div><span class="map-hours-day">Tuesday</span></div>
+            <span class="map-hours-time">10am – 6pm</span>
+          </div>
+          <div class="map-hours-row">
+            <div style="display:flex;align-items:center;gap:8px;"><div class="map-hours-dot open"></div><span class="map-hours-day">Wednesday</span></div>
+            <span class="map-hours-time">10am – 6pm</span>
+          </div>
+          <div class="map-hours-row">
+            <div style="display:flex;align-items:center;gap:8px;"><div class="map-hours-dot open"></div><span class="map-hours-day">Thursday</span></div>
+            <span class="map-hours-time">10am – 6pm</span>
+          </div>
+          <div class="map-hours-row">
+            <div style="display:flex;align-items:center;gap:8px;"><div class="map-hours-dot open"></div><span class="map-hours-day">Friday</span></div>
+            <span class="map-hours-time">10am – 6pm</span>
+          </div>
+          <div class="map-hours-row">
+            <div style="display:flex;align-items:center;gap:8px;"><div class="map-hours-dot open"></div><span class="map-hours-day">Saturday</span></div>
+            <span class="map-hours-time">10am – 4pm</span>
+          </div>
+          <div class="map-hours-row">
+            <div style="display:flex;align-items:center;gap:8px;"><div class="map-hours-dot closed"></div><span class="map-hours-day">Sunday</span></div>
+            <span class="map-hours-time" style="color:#c0392b;">Closed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sec newsletter-bg">
+  <div class="sec-inner">
+    <div class="newsletter-inner">
+      <div class="sec-label" style="text-align:center;">Newsletter</div>
+      <div class="sec-title" style="text-align:center;">Join the tea <em>circle</em></div>
+      <p class="sec-sub">Monthly harvest notes, ceremony guides, exclusive early access, and a welcome gift of 10% off your first order.</p>
+      <div class="email-row">
+        <input class="email-input" type="email" placeholder="Your email address"/>
+        <button class="btn-newsletter">Subscribe</button>
+      </div>
+      <div class="newsletter-note">No spam. Unsubscribe any time. Your details stay private.</div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <a href="index.html">
+  <img src="images/chado-matcha-logo.png" alt="Chado Matcha Logo">
+</a>
+        <p class="footer-tagline">Bringing the ancient art of Japanese tea ceremony to modern India. Sourced with care, delivered with intention.</p>
+      </div>
+      <div class="footer-col"><h4>Shop</h4><ul>
+        <li><a href="matcha.html">Ceremonial matcha</a></li>
+        <li><a href="matcha.html">Premium matcha</a></li>
+        <li><a href="matcha.html">Culinary grade</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="matcha.html">Gift sets</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Learn</h4><ul>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="about.html">Ceremony guide</a></li>
+        <li><a href="blog.html">Brewing tips</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="blog.html">Video tutorials</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Company</h4><ul>
+        <li><a href="about.html">Our story</a></li>
+        <li><a href="about.html">Our farms</a></li>
+        <li><a href="subscription.html">Subscription</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">Careers</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 Chado Matcha. All rights reserved.</div>
+      <div class="footer-badges"><span class="fbadge">JAS Organic</span><span class="fbadge">Direct Trade</span><span class="fbadge">Made in India</span></div>
+    </div>
+  </div>
+</footer>
+<a href="#" class="back-to-top">
+  <i class="bi bi-arrow-up"></i>
+</a>
+<script src="main.js"></script>
+</body>
+</html>

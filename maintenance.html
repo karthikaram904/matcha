@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Maintenance · Chado Matcha</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script>(function(){var t=localStorage.getItem("chado-theme"),d=localStorage.getItem("chado-dir");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");if(d==="rtl")document.documentElement.setAttribute("dir","rtl");})()</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --green-deep:#1c3016;--green-mid:#2e5026;--sage:#8aac7e;--sage-pale:#c8dfc2;
+  --text-dark:#1c2419;--text-muted:#7a9175;--bg:#0d1a09;
+}
+html[data-theme="dark"]{--bg:#000000;--text-dark:#ffffff;--text-muted:#8aac7e;}
+html,body{height:100%;font-family:'DM Sans',sans-serif;}
+body{
+  min-height:140vh;background:var(--bg);
+  display:flex;align-items:center;justify-content:center;
+  position:relative;overflow:auto;
+}
+/* bg */
+body::before{
+  content:'';position:absolute;inset:0;
+  background:url('https://images.unsplash.com/photo-1523906630133-f6934a1ab0f5?w=1600&q=40') center/cover no-repeat;
+  opacity:0.12;z-index:0;
+}
+/* animated tea rings */
+.ring{
+  position:absolute;border-radius:50%;border:0.5px solid rgba(138,172,126,0.15);
+  top:50%;left:50%;transform:translate(-50%,-50%);
+  animation:pulse 4s ease-in-out infinite;
+}
+.ring:nth-child(1){width:300px;height:300px;animation-delay:0s;}
+.ring:nth-child(2){width:500px;height:500px;animation-delay:0.8s;}
+.ring:nth-child(3){width:700px;height:700px;animation-delay:1.6s;}
+.ring:nth-child(4){width:900px;height:900px;animation-delay:2.4s;}
+@keyframes pulse{
+  0%,100%{opacity:0;transform:translate(-50%,-50%) scale(0.95);}
+  50%{opacity:1;transform:translate(-50%,-50%) scale(1);}
+}
+
+.card{
+  position:relative;z-index:1;text-align:center;
+  padding:64px 48px;max-width:580px;width:100%;
+}
+.logo{
+  font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:300;
+  color:#c8dfc2;letter-spacing:3px;text-transform:uppercase;
+  text-decoration:none;display:inline-block;margin-bottom:52px;
+}
+.logo span{font-style:italic;color:#8aac7e;}
+/* tea steam animation */
+.tea-wrap{position:relative;width:80px;height:80px;margin:0 auto 32px;}
+.tea-circle{
+  width:80px;height:80px;border-radius:50%;
+  background:linear-gradient(135deg,#2e5026,#1c3016);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 40px rgba(28,48,22,0.4);
+}
+.tea-circle img{width:52px;height:52px;border-radius:50%;object-fit:cover;}
+.steam{
+  position:absolute;bottom:76px;left:50%;transform:translateX(-50%);
+  display:flex;gap:6px;
+}
+.steam-line{
+  width:2px;border-radius:2px;background:rgba(200,223,194,0.4);
+  animation:steam 2s ease-in-out infinite;
+}
+.steam-line:nth-child(1){height:14px;animation-delay:0s;}
+.steam-line:nth-child(2){height:20px;animation-delay:0.3s;}
+.steam-line:nth-child(3){height:14px;animation-delay:0.6s;}
+@keyframes steam{
+  0%,100%{transform:scaleY(0.5);opacity:0;}
+  50%{transform:scaleY(1);opacity:1;}
+}
+
+.maint-title{
+  font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:300;
+  color:#fff;line-height:1.2;margin-bottom:14px;
+}
+.maint-title em{font-style:italic;color:#c8dfc2;}
+.maint-desc{font-size:16px;color:rgba(255,255,255,0.5);line-height:1.8;margin-bottom:40px;max-width:420px;margin-left:auto;margin-right:auto;}
+
+/* countdown */
+.countdown-label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8aac7e;margin-bottom:16px;}
+.countdown{display:flex;justify-content:center;gap:16px;margin-bottom:40px;}
+.cd-block{background:rgba(255,255,255,0.06);border:0.5px solid rgba(200,223,194,0.15);border-radius:10px;padding:16px 20px;min-width:72px;}
+.cd-num{font-family:'Cormorant Garamond',serif;font-size:36px;color:#c8dfc2;font-weight:300;line-height:1;}
+.cd-lbl{font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:1px;text-transform:uppercase;margin-top:4px;}
+
+/* notify form */
+.notify-wrap{background:rgba(255,255,255,0.05);border:0.5px solid rgba(200,223,194,0.12);border-radius:12px;padding:28px;margin-bottom:32px;}
+.notify-title{font-size:15px;color:rgba(255,255,255,0.7);margin-bottom:16px;}
+.notify-row{display:flex;gap:10px;}
+.notify-input{
+  flex:1;background:rgba(255,255,255,0.08);border:0.5px solid rgba(200,223,194,0.2);
+  border-radius:6px;color:#fff;padding:12px 16px;font-size:14px;
+  font-family:'DM Sans',sans-serif;outline:none;transition:border-color 0.2s;
+}
+.notify-input:focus{border-color:rgba(200,223,194,0.5);}
+.notify-input::placeholder{color:rgba(255,255,255,0.3);}
+.notify-btn{
+  background:#c8dfc2;color:#1c3016;padding:12px 20px;border:none;
+  border-radius:6px;font-size:14px;font-weight:500;cursor:pointer;
+  font-family:'DM Sans',sans-serif;white-space:nowrap;
+  transition:background 0.2s,transform 0.2s;
+}
+.notify-btn:hover{background:#a8c9a0;transform:translateY(-1px);}
+.notify-note{font-size:12px;color:rgba(255,255,255,0.25);margin-top:10px;}
+
+/* social */
+.social-row{display:flex;justify-content:center;gap:12px;}
+.s-btn{
+  width:38px;height:38px;border-radius:50%;
+  background:rgba(255,255,255,0.07);border:0.5px solid rgba(200,223,194,0.15);
+  display:flex;align-items:center;justify-content:center;
+  text-decoration:none;font-size:15px;color:rgba(255,255,255,0.55);
+  transition:background 0.2s,color 0.2s,transform 0.2s;
+}
+.s-btn:hover{background:rgba(200,223,194,0.15);color:#c8dfc2;transform:translateY(-2px);}
+
+@media(max-width:480px){
+  .card{padding:40px 20px;}
+  .maint-title{font-size:28px;}
+  .countdown{gap:10px;}
+  .cd-block{padding:12px 14px;min-width:60px;}
+  .cd-num{font-size:28px;}
+  .notify-row{flex-direction:column;}
+  .notify-btn{width:100%;}
+  .ring:nth-child(3),.ring:nth-child(4){display:none;}
+}
+.card img
+{
+  width: 150px;
+}
+</style>
+</head>
+<body>
+
+<div class="ring"></div>
+<div class="ring"></div>
+<div class="ring"></div>
+<div class="ring"></div>
+
+<div class="card">
+  <a href="index.html">
+  <img src="images/chado-matcha-logo.png" alt="Chado Matcha Logo">
+</a>
+
+  <div class="tea-wrap">
+    <div class="steam">
+      <div class="steam-line"></div>
+      <div class="steam-line"></div>
+      <div class="steam-line"></div>
+    </div>
+    <div class="tea-circle">
+      <img src="https://images.unsplash.com/photo-1558160074-4d7d8bdf4256?w=120&q=80" alt="matcha">
+    </div>
+  </div>
+
+  <div class="maint-title">We're brewing<br/>something <em>new</em></div>
+  <p class="maint-desc">Our site is currently undergoing scheduled maintenance. We'll be back shortly — better than ever.</p>
+
+  <div class="countdown-label">Back online in</div>
+  <div class="countdown">
+    <div class="cd-block"><div class="cd-num" id="cdH">00</div><div class="cd-lbl">Hours</div></div>
+    <div class="cd-block"><div class="cd-num" id="cdM">00</div><div class="cd-lbl">Mins</div></div>
+    <div class="cd-block"><div class="cd-num" id="cdS">00</div><div class="cd-lbl">Secs</div></div>
+  </div>
+
+  <div class="notify-wrap">
+    <div class="notify-title">Notify me when we're back</div>
+    <div class="notify-row">
+      <input class="notify-input" type="email" placeholder="your@email.com" id="notifyEmail"/>
+      <button class="notify-btn" onclick="handleNotify()">Notify me</button>
+    </div>
+    <div class="notify-note" id="notifyMsg">No spam. We'll send one email when the site is live.</div>
+  </div>
+
+  <div class="social-row">
+    <a href="#" class="s-btn" title="Instagram">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+    </a>
+    <a href="#" class="s-btn" title="Twitter / X">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+    </a>
+    <a href="#" class="s-btn" title="Facebook">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.514c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+    </a>
+  </div>
+</div>
+
+<script>
+// Countdown — set your target date here
+const TARGET = new Date(Date.now() +294 * 60 * 60 * 1000); // 4 hours from now
+function tick(){
+  const diff = TARGET - Date.now();
+  if(diff <= 0){ clearInterval(timer); return; }
+  const h = Math.floor(diff/3600000);
+  const m = Math.floor((diff%3600000)/60000);
+  const s = Math.floor((diff%60000)/1000);
+  document.getElementById('cdH').textContent = String(h).padStart(2,'0');
+  document.getElementById('cdM').textContent = String(m).padStart(2,'0');
+  document.getElementById('cdS').textContent = String(s).padStart(2,'0');
+}
+tick();
+const timer = setInterval(tick, 1000);
+
+// Notify
+function handleNotify(){
+  const v = document.getElementById('notifyEmail').value.trim();
+  const msg = document.getElementById('notifyMsg');
+  if(!v || !v.includes('@')){
+    msg.textContent = 'Please enter a valid email address.';
+    msg.style.color = '#e07070';
+    return;
+  }
+  msg.textContent = "✓ You're on the list — we'll email you the moment we're live.";
+  msg.style.color = '#8aac7e';
+  document.getElementById('notifyEmail').value = '';
+}
+</script>
+</body>
+</html>

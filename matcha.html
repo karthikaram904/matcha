@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Matcha — Chado Matcha</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script>(function(){var t=localStorage.getItem("chado-theme"),d=localStorage.getItem("chado-dir");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");if(d==="rtl")document.documentElement.setAttribute("dir","rtl");})()</script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<style>
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html">
+  <img src="images/chado-matcha-logo.png" alt="Chado Matcha Logo">
+</a>
+    <ul class="nav-links">
+      <li class="has-dropdown"><a href="index.html">Home</a>
+        <ul class="dropdown">
+          <li><a href="index.html">Home 1</a></li>
+          <li><a href="home2.html">Home 2</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html" >About</a></li>
+      <li><a href="matcha.html" >Matcha</a></li>
+      <li><a href="equipment.html" >Equipment</a></li>
+      <li><a href="workshops.html" >Workshops</a></li>
+      <li><a href="subscription.html" >Subscription</a></li>
+      <li><a href="contact.html" >Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="btn-theme" id="themeBtn" title="Dark mode">🌙</button>
+      <button class="btn-rtl" id="rtlBtn">RTL</button>
+      <button class="btn-login" id="loginBtnMobile"
+  style="border-color:rgba(255,255,255,0.4);"
+  onclick="window.location.href='login.html'">
+  Login
+</button>
+      <button class="nav-hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <div class="mobile-parent" id="mobileHomeToggle">
+      <a href="index.html" style="flex:1;">Home</a>
+      <span class="mobile-arrow" id="mobileHomeArrow">▾</span>
+    </div>
+    <div class="mobile-dropdown" id="mobileHomeDropdown">
+      <a href="index.html">Home 1</a>
+      <a href="home2.html">Home 2</a>
+    </div>
+    <a href="about.html">About Us</a>
+    <a href="matcha.html" class="active">Matcha</a>
+    <a href="equipment.html">Equipment</a>
+    <a href="workshops.html">Workshops</a>
+    <a href="subscription.html">Subscription</a>
+    <a href="contact.html">Contact Us</a>
+    <div class="nav-mobile-btns">
+      <button class="btn-theme" id="themeBtnMobile" style="width:38px;height:38px;font-size:16px;">🌙</button>
+      <button class="btn-rtl" id="rtlBtnMobile">RTL</button>
+      <button class="btn-login" id="loginBtnMobile"
+  style="border-color:rgba(255,255,255,0.4);"
+  onclick="window.location.href='login.html'">
+  Login
+</button>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+
+<section class="page-hero">
+  <style>.page-hero::before{background-image:url('images/about-bg.webp');}</style>
+  <div class="page-hero-inner">
+    <div class="hero-eyebrow">Our Collection</div>
+    <h1 class="hero-h1">Stone-ground, shade-grown<br/><em>matcha</em></h1>
+    <p class="hero-p">We believe matcha is more than a drink — it is a living philosophy. Meet the team devoted to bringing that philosophy to India.</p>
+  </div>
+</section>
+
+<!-- ── SECTION 1: WHAT IS MATCHA ── -->
+<section class="sec what-bg">
+  <div class="sec-inner">
+    <div class="what-grid">
+      <div class="anim-right anim">
+        <div class="sec-label">What Is Matcha</div>
+        <div class="sec-title">More than a drink —<br/>a <em>way of life</em></div>
+        <p class="what-desc">Matcha (抹茶) literally means "powdered tea." Unlike regular green tea where leaves are steeped and discarded, matcha is made by grinding whole shade-grown tea leaves into a fine powder — so when you drink it, you consume the entire leaf.</p>
+        <p class="what-desc">The result is a uniquely rich, creamy, and complex drink with ten times the nutrients of regular green tea. Every sip delivers the full spectrum of the leaf's amino acids, antioxidants, and slow-release caffeine.</p>
+        <div class="what-tags">
+          <div class="what-tag"><i class="fa-solid fa-leaf"></i><span>Whole leaf, nothing wasted</span></div>
+          <div class="what-tag"><i class="fa-solid fa-sun"></i><span>Shade-grown for 21 days</span></div>
+          <div class="what-tag"><i class="fa-solid fa-circle-dot"></i><span>Stone-ground fine powder</span></div>
+          <div class="what-tag"><i class="fa-solid fa-flask"></i><span>10× antioxidants vs green tea</span></div>
+        </div>
+      </div>
+      <div class="what-img-wrap anim-left anim">
+        <img class="what-img-main" src="images/about-1.jpg" alt="What is Matcha">
+        <div class="what-float">
+          <div class="what-float-icon"><i class="fa-solid fa-seedling"></i></div>
+          <div>
+            <div class="what-float-val">Camellia sinensis</div>
+            <div class="what-float-lbl">Same plant as all green tea</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── DIFFERENCE: MATCHA VS GREEN TEA ── -->
+<section class="sec diff-bg">
+  <div class="sec-inner">
+    <div class="sec-header center anim-fade anim">
+      <div class="sec-label">Matcha vs Green Tea</div>
+      <div class="sec-title" style="text-align:center;">Why matcha is <em>different</em></div>
+      <p class="sec-sub" style="text-align:center;margin:0 auto;">Same plant. Completely different result — because of how it's grown, processed, and consumed.</p>
+    </div>
+    <div class="diff-wrap">
+      <div class="diff-table anim-fade anim">
+        <div class="diff-head m">Matcha</div>
+        <div class="diff-mid-head"></div>
+        <div class="diff-head g">Green Tea</div>
+
+        <div class="diff-row-m"><i class="fa-solid fa-check-circle"></i>Shade-grown for 21 days before harvest</div>
+        <div class="diff-mid-cell"><div class="diff-vs">VS</div></div>
+        <div class="diff-row-g"><i class="fa-solid fa-times-circle"></i>Grown in full sunlight</div>
+
+        <div class="diff-row-m"><i class="fa-solid fa-check-circle"></i>Entire leaf ground into powder</div>
+        <div class="diff-mid-cell"><div class="diff-vs">VS</div></div>
+        <div class="diff-row-g"><i class="fa-solid fa-times-circle"></i>Leaves steeped then discarded</div>
+
+        <div class="diff-row-m"><i class="fa-solid fa-check-circle"></i>100% of nutrients consumed</div>
+        <div class="diff-mid-cell"><div class="diff-vs">VS</div></div>
+        <div class="diff-row-g"><i class="fa-solid fa-times-circle"></i>Only water-soluble nutrients extracted</div>
+
+        <div class="diff-row-m"><i class="fa-solid fa-check-circle"></i>High L-theanine → calm focus</div>
+        <div class="diff-mid-cell"><div class="diff-vs">VS</div></div>
+        <div class="diff-row-g"><i class="fa-solid fa-times-circle"></i>Lower L-theanine concentration</div>
+
+        <div class="diff-row-m"><i class="fa-solid fa-check-circle"></i>Stone-ground — stone mills only</div>
+        <div class="diff-mid-cell"><div class="diff-vs">VS</div></div>
+        <div class="diff-row-g"><i class="fa-solid fa-times-circle"></i>Rolled, dried, or pan-fried</div>
+
+        <div class="diff-row-m"><i class="fa-solid fa-check-circle"></i>Vivid bright green colour</div>
+        <div class="diff-mid-cell"><div class="diff-vs">VS</div></div>
+        <div class="diff-row-g"><i class="fa-solid fa-times-circle"></i>Pale yellow-green liquid</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SECTION 2: BENEFITS ── -->
+<section class="sec benefits-bg">
+  <div class="sec-inner">
+    <div class="sec-header center anim-fade anim">
+      <div class="sec-label">Benefits of Matcha</div>
+      <div class="sec-title" style="text-align:center;color:#fff;">What every cup<br/><em style="color:#c8dfc2;">does for you</em></div>
+      <p class="sec-sub" style="text-align:center;margin:0 auto;">Four powerful reasons matcha has been part of Japanese wellness culture for over 500 years.</p>
+    </div>
+    <div class="benefits-grid">
+
+      <div class="benefit-card anim">
+        <div class="benefit-icon"><i class="fa-solid fa-bolt"></i></div>
+        <div class="benefit-title">Sustained Energy</div>
+        <div class="benefit-sub">Slow Caffeine Release</div>
+        <p class="benefit-text">Matcha contains 30–70mg of caffeine, but unlike coffee it binds with L-theanine — slowing absorption and delivering a 4–6 hour steady energy curve with no spike or crash.</p>
+        <div class="benefit-bar-wrap">
+          <div class="benefit-bar-label"><span>Energy curve</span><span>6 hrs sustained</span></div>
+          <div class="benefit-bar-track"><div class="benefit-bar-fill" data-width="85"></div></div>
+        </div>
+      </div>
+
+      <div class="benefit-card anim">
+        <div class="benefit-icon"><i class="fa-solid fa-brain"></i></div>
+        <div class="benefit-title">Calm Focus</div>
+        <div class="benefit-sub">L-Theanine Effect</div>
+        <p class="benefit-text">L-theanine — an amino acid abundant in shade-grown matcha — promotes alpha brainwave activity. The result is a state researchers describe as "alert calm" — focused without anxiety.</p>
+        <div class="benefit-bar-wrap">
+          <div class="benefit-bar-label"><span>Focus quality</span><span>Alpha waves ↑</span></div>
+          <div class="benefit-bar-track"><div class="benefit-bar-fill" data-width="90"></div></div>
+        </div>
+      </div>
+
+      <div class="benefit-card anim">
+        <div class="benefit-icon"><i class="fa-solid fa-recycle"></i></div>
+        <div class="benefit-title">Natural Detox</div>
+        <div class="benefit-sub">Chlorophyll Rich</div>
+        <p class="benefit-text">The 21-day shading process dramatically boosts chlorophyll — giving matcha its vivid green colour and acting as a natural chelator that helps the body eliminate heavy metals.</p>
+        <div class="benefit-bar-wrap">
+          <div class="benefit-bar-label"><span>Chlorophyll level</span><span>3× regular tea</span></div>
+          <div class="benefit-bar-track"><div class="benefit-bar-fill" data-width="75"></div></div>
+        </div>
+      </div>
+
+      <div class="benefit-card anim">
+        <div class="benefit-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="benefit-title">Antioxidants</div>
+        <div class="benefit-sub">EGCG Catechins</div>
+        <p class="benefit-text">Matcha contains EGCg (epigallocatechin gallate) — one of the most potent antioxidants known. A single bowl of ceremonial matcha delivers the antioxidant equivalent of 10 cups.</p>
+        <div class="benefit-bar-wrap">
+          <div class="benefit-bar-label"><span>ORAC score</span><span>10× green tea</span></div>
+          <div class="benefit-bar-track"><div class="benefit-bar-fill" data-width="95"></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── SECTION 3: HOW TO PREPARE ── -->
+<section class="sec prep-bg" style="background:var(--bg-main);">
+  <div class="sec-inner">
+    <div class="sec-header anim-fade anim">
+      <div class="sec-label">How to Prepare</div>
+      <div class="sec-title">Four steps to a<br/><em>perfect bowl</em></div>
+      <p class="sec-sub">The traditional preparation takes under five minutes. Each step matters — here is why.</p>
+    </div>
+    <div class="prep-grid">
+      <div class="prep-steps">
+
+        <div class="prep-step anim">
+          <div class="prep-step-left">
+            <div class="prep-num">1</div>
+            <div class="prep-line"></div>
+          </div>
+          <div class="prep-step-content">
+            <div class="prep-step-title">Sift the matcha</div>
+            <p class="prep-step-text">Use a fine mesh sifter to sift 2g (one chashaku scoop) of matcha into your warm chawan bowl. Sifting breaks any clumps and ensures the powder disperses evenly in water — no lumps, no waste.</p>
+            <div class="prep-step-tip"><i class="fa-solid fa-lightbulb"></i>Warm the bowl first with hot water, then discard before sifting.</div>
+          </div>
+        </div>
+
+        <div class="prep-step anim">
+          <div class="prep-step-left">
+            <div class="prep-num">2</div>
+            <div class="prep-line"></div>
+          </div>
+          <div class="prep-step-content">
+            <div class="prep-step-title">Add water at 75–80°C</div>
+            <p class="prep-step-text">Pour 60–70ml of water heated to 75–80°C over the matcha. Never use boiling water — 100°C scorches the amino acids and destroys the sweet umami character, leaving only bitterness.</p>
+            <div class="prep-step-tip"><i class="fa-solid fa-lightbulb"></i>Boil water first, then let it rest 2–3 minutes to reach 78°C.</div>
+          </div>
+        </div>
+
+        <div class="prep-step anim">
+          <div class="prep-step-left">
+            <div class="prep-num">3</div>
+            <div class="prep-line"></div>
+          </div>
+          <div class="prep-step-content">
+            <div class="prep-step-title">Whisk in a W-motion</div>
+            <p class="prep-step-text">Using your chasen whisk, make brisk W or M-shaped strokes across the bottom of the bowl — not circular. Continue for 20–30 seconds until a thick, creamy foam forms on the surface.</p>
+            <div class="prep-step-tip"><i class="fa-solid fa-lightbulb"></i>Your wrist moves, not your arm. Keep the whisk tips close to the bowl base.</div>
+          </div>
+        </div>
+
+        <div class="prep-step anim">
+          <div class="prep-step-left">
+            <div class="prep-num">4</div>
+            <div class="prep-line"></div>
+          </div>
+          <div class="prep-step-content">
+            <div class="prep-step-title">Receive and sip</div>
+            <p class="prep-step-text">In chado tradition, rotate the bowl twice before drinking to appreciate its form. Take three slow, deliberate sips. The first reveals bitterness. The second, sweetness. The third, the lingering finish.</p>
+            <div class="prep-step-tip"><i class="fa-solid fa-lightbulb"></i>Drink within 2–3 minutes of whisking before the foam settles.</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="prep-img-col anim-left anim">
+        <img class="prep-img-main" src="images/grade1.jpg" alt="Matcha preparation">
+        <p class="prep-img-caption">A finished bowl of koicha — thick ceremonial matcha</p>
+        <div class="prep-img-row">
+          <div>
+            <img class="prep-img-sm" src="images/grade2.jpg" alt="Chasen whisk">
+            <p class="prep-img-caption">The chasen whisk</p>
+          </div>
+          <div>
+            <img class="prep-img-sm" src="images/grade3.jpg" alt="Sifting matcha">
+            <p class="prep-img-caption">Sifted tencha powder</p>
+          </div>
+        </div>
+        <div style="background:#1c3016;border-radius:10px;padding:24px;margin-top:4px;">
+          <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8aac7e;margin-bottom:8px;">Pro tip</div>
+          <p style="font-size:14px;color:rgba(255,255,255,0.65);line-height:1.7;">For a latte, prepare a thin usucha bowl first (use 1g matcha, 40ml water), then pour over warm frothed milk. Never add cold milk directly — it prevents proper foam formation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── GRADE COLLECTION ── -->
+<section class="sec grades-bg">
+  <div class="sec-inner">
+    <div class="sec-header anim-fade anim">
+      <div class="sec-label">Our Collection</div>
+      <div class="sec-title">Choose your <em>grade</em></div>
+      <p class="sec-sub">Three grades. One standard of quality. Every tin sourced directly from Uji, Kyoto — stone-ground and air-sealed within 72 hours of harvest.</p>
+    </div>
+    <div class="grades-grid">
+      <div class="grade-card anim">
+        <div class="grade-top ceremonial">
+          <img src="images/about-5.jpg" class="grade-icon-img" alt="Uji Ceremonial">
+          <div class="grade-badge badge-cer">Ceremonial Grade</div>
+          <div class="grade-name">Uji Ceremonial</div>
+        </div>
+        <div class="grade-body">
+          <p class="grade-desc">First harvest tencha from century-old Uji farms. Intensely vibrant, sweet umami, zero bitterness. Reserved for pure bowl preparation.</p>
+          <div class="grade-tags"><span class="tag">First harvest</span><span class="tag">Sweet umami</span><span class="tag">Vivid green</span><span class="tag">No bitterness</span></div>
+          <div class="grade-price">₹1,850 <span>/ 30g tin</span></div>
+          <button class="btn-add">Add to cart</button>
+        </div>
+      </div>
+      <div class="grade-card anim">
+        <div class="grade-top premium">
+          <img src="images/about-6.jpg" class="grade-icon-img" alt="Nishio Premium">
+          <div class="grade-badge badge-pre">Premium Grade</div>
+          <div class="grade-name">Nishio Premium</div>
+        </div>
+        <div class="grade-body">
+          <p class="grade-desc">Second harvest from Nishio — bold, grassy depth. Ideal for lattes, brewing and daily ritual. The most versatile tin in our range.</p>
+          <div class="grade-tags"><span class="tag">Everyday ritual</span><span class="tag">Grassy depth</span><span class="tag">Latte-friendly</span></div>
+          <div class="grade-price">₹1,250 <span>/ 40g tin</span></div>
+          <button class="btn-add">Add to cart</button>
+        </div>
+      </div>
+      <div class="grade-card anim">
+        <div class="grade-top culinary">
+          <img src="images/about-7.jpg" class="grade-icon-img" alt="Shizuoka Culinary">
+          <div class="grade-badge badge-cul">Culinary Grade</div>
+          <div class="grade-name">Shizuoka Culinary</div>
+        </div>
+        <div class="grade-body">
+          <p class="grade-desc">Robust and slightly astringent — holds its character through heat. Perfect for baking, cooking, smoothies, and matcha desserts.</p>
+          <div class="grade-tags"><span class="tag">Baking</span><span class="tag">Cooking</span><span class="tag">Bold flavor</span><span class="tag">Value</span></div>
+          <div class="grade-price">₹780 <span>/ 100g pouch</span></div>
+          <button class="btn-add">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ACCORDION ── -->
+<section class="sec faq-bg">
+  <div class="sec-inner">
+    <div class="sec-header center anim-fade anim">
+      <div class="sec-label">FAQ</div>
+      <div class="sec-title" style="text-align:center;">Common <em>questions</em></div>
+    </div>
+    <div style="max-width:780px;margin:0 auto;">
+      <div class="faq-acc-item anim">
+        <div class="faq-acc-q"><span class="faq-acc-q-text">What temperature should I use for ceremonial matcha?</span><div class="faq-acc-icon"><i class="fa-solid fa-plus"></i></div></div>
+        <div class="faq-acc-body"><p class="faq-acc-text">75–80°C is ideal. Boiling water (100°C) burns the amino acids responsible for sweetness and umami, leaving only bitterness. Let boiled water cool for 2–3 minutes, or use a temperature-controlled kettle.</p></div>
+      </div>
+      <div class="faq-acc-item anim">
+        <div class="faq-acc-q"><span class="faq-acc-q-text">How long does matcha stay fresh after opening?</span><div class="faq-acc-icon"><i class="fa-solid fa-plus"></i></div></div>
+        <div class="faq-acc-body"><p class="faq-acc-text">Consume within 4–6 weeks of opening for peak flavour. Store in a cool, dark place with the tin lid sealed tightly. Do not refrigerate after opening — condensation will accelerate oxidation.</p></div>
+      </div>
+      <div class="faq-acc-item anim">
+        <div class="faq-acc-q"><span class="faq-acc-q-text">What is the difference between the three grades?</span><div class="faq-acc-icon"><i class="fa-solid fa-plus"></i></div></div>
+        <div class="faq-acc-body"><p class="faq-acc-text">Ceremonial grade (first harvest) is for drinking straight — pure bowl preparation with water only. Premium grade suits lattes and daily drinking. Culinary grade is designed for baking, cooking, and blending where its boldness holds through heat and other ingredients.</p></div>
+      </div>
+      <div class="faq-acc-item anim">
+        <div class="faq-acc-q"><span class="faq-acc-q-text">How much caffeine does matcha contain?</span><div class="faq-acc-icon"><i class="fa-solid fa-plus"></i></div></div>
+        <div class="faq-acc-body"><p class="faq-acc-text">A 2g serving of ceremonial matcha contains approximately 35–70mg of caffeine — similar to a shot of espresso. However, because of L-theanine, the effect is very different: sustained and calm rather than spiked and jittery.</p></div>
+      </div>
+      <div class="faq-acc-item anim">
+        <div class="faq-acc-q"><span class="faq-acc-q-text">Can I drink matcha every day?</span><div class="faq-acc-icon"><i class="fa-solid fa-plus"></i></div></div>
+        <div class="faq-acc-body"><p class="faq-acc-text">Yes — 1–2 cups daily is the typical recommendation. Japanese tea practitioners often drink matcha twice a day as part of their morning and afternoon rituals. If you are sensitive to caffeine, avoid drinking after 3pm.</p></div>
+      </div>
+      <div class="faq-acc-item anim">
+        <div class="faq-acc-q"><span class="faq-acc-q-text">Do you ship outside India?</span><div class="faq-acc-icon"><i class="fa-solid fa-plus"></i></div></div>
+        <div class="faq-acc-body"><p class="faq-acc-text">Currently we ship within India only. International shipping is planned for late 2025. Join our newsletter to be the first to know when it launches.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="sec newsletter-bg">
+  <div class="sec-inner">
+    <div class="newsletter-inner">
+      <div class="sec-label" style="text-align:center;">Newsletter</div>
+      <div class="sec-title" style="text-align:center;">Join the tea <em>circle</em></div>
+      <p class="sec-sub">Monthly harvest notes, ceremony guides, exclusive early access, and a welcome gift of 10% off your first order.</p>
+      <div class="email-row">
+        <input class="email-input" type="email" placeholder="Your email address"/>
+        <button class="btn-newsletter">Subscribe</button>
+      </div>
+      <div class="newsletter-note">No spam. Unsubscribe any time. Your details stay private.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <a href="index.html">
+  <img src="images/chado-matcha-logo.png" alt="Chado Matcha Logo">
+</a>
+        <p class="footer-tagline">Bringing the ancient art of Japanese tea ceremony to modern India. Sourced with care, delivered with intention.</p>
+      </div>
+      <div class="footer-col"><h4>Shop</h4><ul>
+        <li><a href="matcha.html">Ceremonial matcha</a></li>
+        <li><a href="matcha.html">Premium matcha</a></li>
+        <li><a href="matcha.html">Culinary grade</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="matcha.html">Gift sets</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Learn</h4><ul>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="about.html">Ceremony guide</a></li>
+        <li><a href="blog.html">Brewing tips</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="blog.html">Video tutorials</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Company</h4><ul>
+        <li><a href="about.html">Our story</a></li>
+        <li><a href="about.html">Our farms</a></li>
+        <li><a href="subscription.html">Subscription</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">Careers</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 Chado Matcha. All rights reserved.</div>
+      <div class="footer-badges"><span class="fbadge">JAS Organic</span><span class="fbadge">Direct Trade</span><span class="fbadge">Made in India</span></div>
+    </div>
+  </div>
+</footer>
+<a href="#" class="back-to-top">
+  <i class="bi bi-arrow-up"></i>
+</a>
+
+<script src="main.js"></script>
+<script>
+// FAQ accordion
+document.querySelectorAll('.faq-acc-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-acc-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+
+// Benefit bar animation
+const bars = document.querySelectorAll('.benefit-bar-fill');
+const barObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.width = entry.target.dataset.width + '%';
+      barObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+bars.forEach(b => barObserver.observe(b));
+</script>
+</body>
+</html>

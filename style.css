@@ -751,7 +751,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text-dark);background:var(--bg
 /* ── WHY CHOOSE ── */
 .h2-why{background:#1c3016;width:100%;padding:96px 0;overflow:hidden;}
 .h2-why-inner{max-width:1200px;margin:0 auto;padding:0 80px;}
-.h2-why-grid{display:grid;grid-template-columns:380px 1fr;gap:80px;align-items:start;}
+.h2-why-grid{display:grid;grid-template-columns:380px 1fr;gap:80px;align-items:center;}
 .h2-why-left .sec-label{color:#8aac7e;}
 .h2-why-left .h2-section-title{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:300;color:#fff;line-height:1.1;margin-bottom:20px;}
 .h2-why-left .h2-section-title em{font-style:italic;color:#c8dfc2;}

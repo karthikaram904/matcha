@@ -379,6 +379,11 @@ body{font-family:'DM Sans',sans-serif;color:var(--text-dark);background:var(--bg
   width: 100%;
   position: relative;
 }
+	.nav-mobile-menu.open {
+  display: flex;
+  position: fixed !important;
+  width: 100% !important;
+}
   .hero-inner{padding:56px 32px;min-height:auto;gap:32px;}
   .hero-h1,.page-hero .hero-h1{font-size:48px;}
   .sec-inner{padding:0 32px;}

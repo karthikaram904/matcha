@@ -4,33 +4,40 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Blog — Chado Matcha</title>
+ <link rel="icon" type="image/png" href="images/chado-logo.png">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <script>(function(){var t=localStorage.getItem("chado-theme"),d=localStorage.getItem("chado-dir");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");if(d==="rtl")document.documentElement.setAttribute("dir","rtl");})()</script>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 <body>
 <nav class="nav">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">Chado <span>Matcha</span></a>
+    <a href="index.html">
+  <img src="images/chado-matcha-logo.png" alt="Chado Matcha Logo">
+</a>
     <ul class="nav-links">
-      <li class="has-dropdown"><a href="index.html" >Home</a>
+      <li class="has-dropdown"><a href="index.html" class='active'>Home</a>
         <ul class="dropdown">
           <li><a href="index.html">Home 1</a></li>
           <li><a href="home2.html">Home 2</a></li>
         </ul>
       </li>
-      <li><a href="about.html" >About Us</a></li>
+      <li><a href="about.html" >About</a></li>
       <li><a href="matcha.html" >Matcha</a></li>
       <li><a href="equipment.html" >Equipment</a></li>
       <li><a href="workshops.html" >Workshops</a></li>
       <li><a href="subscription.html" >Subscription</a></li>
-      <li><a href="blog.html" class='active'>Blog</a></li>
-      <li><a href="contact.html" >Contact Us</a></li>
+      <li><a href="contact.html" >Contact</a></li>
     </ul>
     <div class="nav-right">
       <button class="btn-theme" id="themeBtn" title="Dark mode">🌙</button>
-      <button class="btn-rtl" id="rtlBtn">RTL ⇄</button>
+      <button class="btn-rtl" id="rtlBtn">RTL</button>
       <button class="btn-login" id="loginBtnMobile"
   style="border-color:rgba(255,255,255,0.4);"
   onclick="window.location.href='login.html'">
@@ -55,7 +62,6 @@
     <a href="equipment.html">Equipment</a>
     <a href="workshops.html">Workshops</a>
     <a href="subscription.html">Subscription</a>
-    <a href="blog.html">Blog</a>
     <a href="contact.html">Contact Us</a>
     <div class="nav-mobile-btns">
       <button class="btn-theme" id="themeBtnMobile" style="width:38px;height:38px;font-size:16px;">🌙</button>
@@ -68,8 +74,9 @@
     </div>
   </div>
 </nav>
-<section class="page-hero" style="--bg:url(https://images.unsplash.com/photo-1523906630133-f6934a1ab0f5?w=1600&q=80)">
-  <style>.page-hero::before{background-image:url('https://images.unsplash.com/photo-1523906630133-f6934a1ab0f5?w=1600&q=80');}</style>
+
+<section class="page-hero">
+  <style>.page-hero::before{background-image:url('images/about-bg.webp');}</style>
   <div class="page-hero-inner">
     <div class="hero-eyebrow">The Tea Journal</div>
     <h1 class="hero-h1">Stories, guides &amp;<br/><em>brewing wisdom</em></h1>
@@ -80,12 +87,12 @@
   <div class="sec-inner">
     <div class="sec-header anim-fade anim"><div class="sec-label">Latest Posts</div><div class="sec-title">From the <em>journal</em></div></div>
     <div class="blog-grid">
-      <div class="blog-card anim"><img src="https://images.unsplash.com/photo-1558160074-4d7d8bdf4256?w=600" class="blog-img" alt="Blog 1"><div class="blog-body"><div class="blog-cat">Ceremony</div><div class="blog-title">The five movements of chado and what they teach us</div><p class="blog-excerpt">In a world of notifications, the tea ceremony asks us to be fully present. Here we explore each of the five steps and their deeper meaning.</p><div class="blog-meta"><span>May 2025</span><span>· 6 min read</span></div><a href="#" class="btn-read">Read more →</a></div></div>
-      <div class="blog-card anim"><img src="https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?w=600" class="blog-img" alt="Blog 2"><div class="blog-body"><div class="blog-cat">Sourcing</div><div class="blog-title">A visit to the Yamamoto family farm in Uji</div><p class="blog-excerpt">We spent three days with the Yamamoto family in April — here is what we saw, tasted, and learned about the first harvest of 2025.</p><div class="blog-meta"><span>April 2025</span><span>· 8 min read</span></div><a href="#" class="btn-read">Read more →</a></div></div>
-      <div class="blog-card anim"><img src="https://images.unsplash.com/photo-1600271886742-f049cd5bba5c?w=600" class="blog-img" alt="Blog 3"><div class="blog-body"><div class="blog-cat">Brewing</div><div class="blog-title">Why water temperature changes everything</div><p class="blog-excerpt">100°C vs 80°C — the science of what heat does to L-theanine, catechins and the amino acids that give matcha its sweetness.</p><div class="blog-meta"><span>March 2025</span><span>· 5 min read</span></div><a href="#" class="btn-read">Read more →</a></div></div>
-      <div class="blog-card anim"><img src="https://images.unsplash.com/photo-1523906630133-f6934a1ab0f5?w=600" class="blog-img" alt="Blog 4"><div class="blog-body"><div class="blog-cat">Culture</div><div class="blog-title">Shade-growing: the 21-day process that makes matcha different</div><p class="blog-excerpt">Covering the tea plants before harvest is what causes chlorophyll to surge and creates that iconic vivid green colour.</p><div class="blog-meta"><span>Feb 2025</span><span>· 7 min read</span></div><a href="#" class="btn-read">Read more →</a></div></div>
-      <div class="blog-card anim"><img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600" class="blog-img" alt="Blog 5"><div class="blog-body"><div class="blog-cat">Health</div><div class="blog-title">Matcha and focus: what the research actually says</div><p class="blog-excerpt">L-theanine and caffeine together create a state researchers call "calm alertness." We look at the published studies.</p><div class="blog-meta"><span>Jan 2025</span><span>· 6 min read</span></div><a href="#" class="btn-read">Read more →</a></div></div>
-      <div class="blog-card anim"><img src="https://images.unsplash.com/photo-1563822249366-3efb23b8e0c9?w=600" class="blog-img" alt="Blog 6"><div class="blog-body"><div class="blog-cat">Recipes</div><div class="blog-title">Five matcha recipes worth making this weekend</div><p class="blog-excerpt">From a classic usucha bowl to a cold-brew latte, a matcha tiramisu and a savoury matcha soba — recipes for every mood.</p><div class="blog-meta"><span>Dec 2024</span><span>· 9 min read</span></div><a href="#" class="btn-read">Read more →</a></div></div>
+      <div class="blog-card anim"><img src="images/sell1.webp" class="blog-img" alt="Blog 1"><div class="blog-body"><div class="blog-cat">Ceremony</div><div class="blog-title">The five movements of chado and what they teach us</div><p class="blog-excerpt">In a world of notifications, the tea ceremony asks us to be fully present. Here we explore each of the five steps and their deeper meaning.</p><div class="blog-meta"><span>May 2025</span><span>· 6 min read</span></div><a href="#" class="btn-read">Read more →</a></div></div>
+      <div class="blog-card anim"><img src="images/sell12.webp" class="blog-img" alt="Blog 2"><div class="blog-body"><div class="blog-cat">Sourcing</div><div class="blog-title">A visit to the Yamamoto family farm in Uji</div><p class="blog-excerpt">We spent three days with the Yamamoto family in April — here is what we saw, tasted, and learned about the first harvest of 2025.</p><div class="blog-meta"><span>April 2025</span><span>· 8 min read</span></div><a href="#" class="btn-read">Read more →</a></div></div>
+      <div class="blog-card anim"><img src="images/sell13.webp" class="blog-img" alt="Blog 3"><div class="blog-body"><div class="blog-cat">Brewing</div><div class="blog-title">Why water temperature changes everything</div><p class="blog-excerpt">100°C vs 80°C — the science of what heat does to L-theanine, catechins and the amino acids that give matcha its sweetness.</p><div class="blog-meta"><span>March 2025</span><span>· 5 min read</span></div><a href="#" class="btn-read">Read more →</a></div></div>
+      <div class="blog-card anim"><img src="images/gallery12.webp" class="blog-img" alt="Blog 4"><div class="blog-body"><div class="blog-cat">Culture</div><div class="blog-title">Shade-growing: the 21-day process that makes matcha different</div><p class="blog-excerpt">Covering the tea plants before harvest is what causes chlorophyll to surge and creates that iconic vivid green colour.</p><div class="blog-meta"><span>Feb 2025</span><span>· 7 min read</span></div><a href="#" class="btn-read">Read more →</a></div></div>
+      <div class="blog-card anim"><img src="images/gallery13.webp" class="blog-img" alt="Blog 5"><div class="blog-body"><div class="blog-cat">Health</div><div class="blog-title">Matcha and focus: what the research actually says</div><p class="blog-excerpt">L-theanine and caffeine together create a state researchers call "calm alertness." We look at the published studies.</p><div class="blog-meta"><span>Jan 2025</span><span>· 6 min read</span></div><a href="#" class="btn-read">Read more →</a></div></div>
+      <div class="blog-card anim"><img src="images/equip12.webp" class="blog-img" alt="Blog 6"><div class="blog-body"><div class="blog-cat">Recipes</div><div class="blog-title">Five matcha recipes worth making this weekend</div><p class="blog-excerpt">From a classic usucha bowl to a cold-brew latte, a matcha tiramisu and a savoury matcha soba — recipes for every mood.</p><div class="blog-meta"><span>Dec 2024</span><span>· 9 min read</span></div><a href="#" class="btn-read">Read more →</a></div></div>
     </div>
   </div>
 </section>
@@ -107,7 +114,9 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div>
-        <a href="index.html" class="footer-brand">Chado <span>Matcha</span></a>
+        <a href="index.html">
+  <img src="images/chado-matcha-logo.png" alt="Chado Matcha Logo">
+</a>
         <p class="footer-tagline">Bringing the ancient art of Japanese tea ceremony to modern India. Sourced with care, delivered with intention.</p>
       </div>
       <div class="footer-col"><h4>Shop</h4><ul>
@@ -133,11 +142,14 @@
       </ul></div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-copy">© 2025 Chado Matcha. All rights reserved.</div>
+      <div class="footer-copy">© 2026 Chado Matcha. All rights reserved.</div>
       <div class="footer-badges"><span class="fbadge">JAS Organic</span><span class="fbadge">Direct Trade</span><span class="fbadge">Made in India</span></div>
     </div>
   </div>
 </footer>
+<a href="#" class="back-to-top">
+  <i class="bi bi-arrow-up"></i>
+</a>
 <script src="main.js"></script>
 </body>
 </html>

@@ -1532,4 +1532,7 @@ html[data-theme="dark"] .plan-btn,html[data-theme="dark"] .btn-hero-primary:hove
   color: #fff !important;
   border: 1px solid #fff !important;
 }
-	
+html[data-theme="dark"] .about-us-bg,html[data-theme="dark"] .ceremony-bg,html[data-theme="dark"] .h2-why,html[data-theme="dark"] .h2-gallery,html[data-theme="dark"] .facts-bg,html[data-theme="dark"] .benefits-bg,html[data-theme="dark"] .science-bg,html[data-theme="dark"] .instructor-bg,html[data-theme="dark"] .benefits2-bg  
+{
+	background:#000;
+}

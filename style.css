@@ -1581,3 +1581,6 @@ html[data-theme="dark"] .about-us-bg,html[data-theme="dark"] .ceremony-bg,html[d
 html[data-theme="dark"] .nav-inner img {
   filter: brightness(0) invert(1);
 }
+.auth-logo img {
+  margin-bottom: 20px;
+}

@@ -1582,5 +1582,5 @@ html[data-theme="dark"] .nav-inner img {
   filter: brightness(0) invert(1);
 }
 .auth-logo img {
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
 }

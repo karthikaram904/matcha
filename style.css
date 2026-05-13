@@ -115,7 +115,7 @@ color:#000;
 .btn-theme:hover{background:rgba(255,255,255,0.18);}
 .btn-rtl{background:rgba(255,255,255,0.08);border:0.5px solid #000;color:#000;width: 34px;
   height: 34px;
-  border-radius: 50%;font-size:13px;letter-spacing:0.5px;cursor:pointer;font-family:'DM Sans',sans-serif;white-space:nowrap;transition:background 0.2s;}
+  border-radius: 50%;font-size:11px;letter-spacing:0.5px;cursor:pointer;font-family:'DM Sans',sans-serif;white-space:nowrap;transition:background 0.2s;}
 .btn-rtl:hover{background:rgba(255,255,255,0.18);}
 .btn-login{padding:0 16px;height:34px;border-radius:4px;font-size:14px;letter-spacing:0.5px;cursor:pointer;font-family:'DM Sans',sans-serif;white-space:nowrap;transition:background 0.2s;}
 html[data-theme="dark"] .btn-login:hover{background:rgba(255,255,255,0.1);}

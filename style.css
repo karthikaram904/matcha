@@ -1587,3 +1587,8 @@ html[data-theme="dark"] .nav-inner img {
 .auth-logo img {
   margin-bottom: 30px !important;
 }
+.nav-links .has-dropdown .active,.nav-links li .active
+{
+color: #8aac7e !important;
+  font-weight: 600;	
+}
